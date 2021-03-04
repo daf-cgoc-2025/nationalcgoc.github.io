@@ -1,6 +1,6 @@
 # nationalcgoc.github.io
 
-Source code fot he National CGOC's Homepage.
+Source code for the National CGOC's Homepage.
 
 ## Credits
 
