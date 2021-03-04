@@ -1,0 +1,1688 @@
+{
+    "type":"FeatureCollection",
+    "features":[
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Altus AFB",
+                "location":"Altus, OK",
+                "lat":"34.6",
+                "lon":"-99.2",
+                "president":"Priscilla Ledesma",
+                "vp":"Ian Roosa",
+                "primary_email":"priscilla.ledesma.1@us.af.mil",
+                "secondary_email":"ian.roosa@us.af.mil",
+                "org_email":"None",
+                "facebook":"https://www.facebook.com/AltusCGOC/"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -99.2,
+                    34.6
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Barksdale AFB",
+                "location":"Shreveport, LA",
+                "lat":"32.5",
+                "lon":"-93.6",
+                "president":"Ryan Hollister",
+                "vp":"Jennifer “Bee” Young",
+                "primary_email":"ryan.hollister@us.af.mil",
+                "secondary_email":"jennifer.young.26@us.af.mil",
+                "org_email":"None",
+                "facebook":"https://www.facebook.com/groups/493663984663820",
+                "instagram":"https://www.instagram.com/barksdalecgoc/"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -93.6,
+                    32.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Lackland AFB",
+                "location":"Bexar County, TX",
+                "lat":"29.3",
+                "lon":"-98.6",
+                "president":"Jacob Lawson",
+                "vp":"VACANT",
+                "primary_email":"jacob.lawson.5@us.af.mil",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -98.6,
+                    29.3
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Little Rock AFB",
+                "location":"Jacksonville, AR",
+                "lat":"34.8",
+                "lon":"-92.1",
+                "president":"Thomas Burke",
+                "vp":"Sandy Lall",
+                "primary_email":"thomas.c.burke35.mil@mail.mil",
+                "secondary_email":"sandy.lall.1@us.af.mil",
+                "org_email":"None",
+                "facebook":"https://www.facebook.com/groups/lrcgoc",
+                "instagram":"https://www.instagram.com/lrafb.cgoc/"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -92.1,
+                    34.8
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"McConnell AFB",
+                "location":"Wichita, KS",
+                "lat":"37.6",
+                "lon":"-97.2",
+                "president":"Dominique Jamieson",
+                "vp":"Jonas Fiant",
+                "primary_email":"dominique.jamieson@us.af.mil",
+                "secondary_email":"jonas.fiant.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -97.2,
+                    37.6
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Randolph AFB",
+                "location":"Universal City, TX",
+                "lat":"29.5",
+                "lon":"-98.2",
+                "president":"Flynn McNeely",
+                "vp":"Adrian Cavazos",
+                "primary_email":"flynn.mcneely.1@us.af.mil",
+                "secondary_email":"adrian.cavazos@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -98.2,
+                    29.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Sheppard AFB",
+                "location":"Wichita Falls, TX",
+                "lat":"33.9",
+                "lon":"-98.5",
+                "president":"Michael Fogle",
+                "vp":"Ramil Manora",
+                "primary_email":"michael.fogle.5@us.af.mil",
+                "secondary_email":"ramil.manora.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -98.5,
+                    33.9
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Tinker AFB",
+                "location":"Oklahoma City, OK",
+                "lat":"35.4",
+                "lon":"-97.4",
+                "president":"Andrea Krunnfusz",
+                "vp":"Victoria Ponder",
+                "primary_email":"andrea.krunnfusz.1@us.af.mil",
+                "secondary_email":"victoria.ponder@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -97.4,
+                    35.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Vance AFB",
+                "location":"Enid, OK",
+                "lat":"36.3",
+                "lon":"-97.9",
+                "president":"VACANT",
+                "vp":"Constantine Routos",
+                "primary_email":"None",
+                "secondary_email":"constantine.routos.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -97.9,
+                    36.3
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"East Division",
+                "base":"Whiteman AFB",
+                "location":"Knob Noster, MO",
+                "lat":"38.7",
+                "lon":"-93.5",
+                "president":"Eric Johnson",
+                "vp":"Nathan Munford",
+                "primary_email":"eric.johnson.138@us.af.mil",
+                "secondary_email":"nathan.munford@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -93.5,
+                    38.7
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"Buckley AFB",
+                "location":"Aurora, CO",
+                "lat":"39.7",
+                "lon":"-104.7",
+                "president":"Sydney Heart",
+                "vp":"VACANT",
+                "primary_email":"Sydney.heart.1@us.af.mil",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -104.7,
+                    39.7
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"Ellsworth AFB",
+                "location":"Box Elder, SD",
+                "lat":"44.1",
+                "lon":"-103.1",
+                "president":"Alexis Hickey",
+                "vp":"Melanie Davis",
+                "primary_email":"alexis.hickey@us.af.mil",
+                "secondary_email":"melanie.davis.16@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -103.1,
+                    44.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"F.E. Warren AFB",
+                "location":"Cheyenne, WY",
+                "lat":"41.1",
+                "lon":"-104.8",
+                "president":"VACANT",
+                "vp":"VACANT",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -104.8,
+                    41.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"Grand Forks AFB",
+                "location":"Grand Forks, ND",
+                "lat":"47.9",
+                "lon":"-97.3",
+                "president":"Zachary Piwko",
+                "vp":"Jan Vecchio",
+                "primary_email":"zachary.piwko@us.af.mi",
+                "secondary_email":"janilie.vecchio@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -97.3,
+                    47.9
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"Malmstrom AFB",
+                "location":"Great Falls, MT",
+                "lat":"47.5",
+                "lon":"-111.1",
+                "president":"VACANT",
+                "vp":"VACANT",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -111.1,
+                    47.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"Minot AFB",
+                "location":"Minot, ND",
+                "lat":"48.4",
+                "lon":"-101.3",
+                "president":"Elizabeth Jordan",
+                "vp":"VACANT",
+                "primary_email":"elizabeth.jordan.2@us.af.mil",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -101.3,
+                    48.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"Offutt AFB",
+                "location":"Bellevue, NE",
+                "lat":"41.1",
+                "lon":"-95.9",
+                "president":"Keith Saylors",
+                "vp":"Cara Leaf",
+                "primary_email":"keith.saylors@us.af.mil",
+                "secondary_email":"cara.leaf@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -95.9,
+                    41.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"Peterson AFB/USAFA",
+                "location":"Colorado Springs, CO",
+                "lat":"30.8",
+                "lon":"-104.7",
+                "president":"Kyle Brandt",
+                "vp":"Victoria Myers",
+                "primary_email":"kyle.brandt.1@us.af.mil",
+                "secondary_email":"victoria.b.myers.mil@mail.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -104.7,
+                    30.8
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"North Division",
+                "base":"Schriever AFB",
+                "location":"Colorado Springs, CO",
+                "lat":"38.7",
+                "lon":"-104.5",
+                "president":"Mark Coxen",
+                "vp":"Nicole Hall",
+                "primary_email":"mark.coxen.1@us.af.mil",
+                "secondary_email":"nicole.hall.7@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -104.5,
+                    38.7
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"South Division",
+                "base":"Cannon AFB",
+                "location":"Clovis, NM",
+                "lat":"34.3",
+                "lon":"-103.3",
+                "president":"Steven Jones",
+                "vp":"Blake Jaeger",
+                "primary_email":"steven.jones.43@us.af.mil",
+                "secondary_email":"blake.jaeger.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -103.3,
+                    34.3
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"South Division",
+                "base":"Davis-Monthan AFB",
+                "location":"Tucson, AZ",
+                "lat":"32.1",
+                "lon":"-110.8",
+                "president":"Will Duff",
+                "vp":"Phil Sweet",
+                "primary_email":"william.duff.3@us.af.mil",
+                "secondary_email":"philip.sweet.3@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -110.8,
+                    32.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"South Division",
+                "base":"Dyess AFB",
+                "location":"Abilene, TX",
+                "lat":"32.4",
+                "lon":"-99.8",
+                "president":"Jonah Whitt",
+                "vp":"Carlos Flores",
+                "primary_email":"jonah.whitt@us.af.mil",
+                "secondary_email":"carlos.flores.12@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -99.8,
+                    32.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"South Division",
+                "base":"Goodfellow AFB",
+                "location":"San Angelo, TX",
+                "lat":"31.4",
+                "lon":"-100.4",
+                "president":"Jarrett Covar",
+                "vp":"Andrew Perham",
+                "primary_email":"jarrett.covar@us.af.mil",
+                "secondary_email":"andrew.perham.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -100.4,
+                    31.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"South Division",
+                "base":"Holloman AFB",
+                "location":"Alamogordo, NM",
+                "lat":"32.8",
+                "lon":"-106.1",
+                "president":"Olamide Adeyeye",
+                "vp":"Elaina James",
+                "primary_email":"olamide.adeyeye@us.af.mil",
+                "secondary_email":"elaina.m.james.mil@mail.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.1,
+                    32.8
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"South Division",
+                "base":"Kirtland AFB",
+                "location":"Albuquerque, NM",
+                "lat":"35",
+                "lon":"-106.5",
+                "president":"Austin Bullock",
+                "vp":"Richard Smith",
+                "primary_email":"austin.bullock.3@us.af.mil",
+                "secondary_email":"richard.smith.159@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -106.5,
+                    35
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"South Division",
+                "base":"Laughlin AFB",
+                "location":"Del Rio, TX",
+                "lat":"29.3",
+                "lon":"-100.7",
+                "president":"Emily Fillmore",
+                "vp":"Rachael Parks",
+                "primary_email":"Emily.l.fillmore.mil@mail.mil",
+                "secondary_email":"rachael.parks.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -100.7,
+                    29.3
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"South Division",
+                "base":"Luke AFB",
+                "location":"Glendale, AZ",
+                "lat":"33.5",
+                "lon":"-112.3",
+                "president":"Elliot Higgins",
+                "vp":"Taylor Willson",
+                "primary_email":"elliott.higgins.1@us.af.mil",
+                "secondary_email":"taylor.willson.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112.3,
+                    33.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Beale AFB",
+                "location":"Marysville, CA",
+                "lat":"39.1",
+                "lon":"-121.3",
+                "president":"Carlo Paulo Salilican",
+                "vp":"Linder, Michael",
+                "primary_email":"christopher.sullivan.8@us.af.mil",
+                "secondary_email":"michael.linder.10@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -121.3,
+                    39.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Creech AFB",
+                "location":"Indian Springs, NV",
+                "lat":"36.5",
+                "lon":"-115.6",
+                "president":"Jennifer Ruhnke",
+                "vp":"Sarah Marianetti",
+                "primary_email":"jennifer.ruhnke@us.af.mil",
+                "secondary_email":"sarah.marianetti@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -115.6,
+                    36.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Edwards AFB",
+                "location":"Edwards, CA",
+                "lat":"34.9",
+                "lon":"-117.9",
+                "president":"Rebecca Saathoff",
+                "vp":"Shaun Wheldon",
+                "primary_email":"rebecca.saathoff.1@us.af.mil",
+                "secondary_email":"Shuan.wheldon@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -117.9,
+                    34.9
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Fairchild AFB",
+                "location":"Spokane, WA",
+                "lat":"47.6",
+                "lon":"-117.6",
+                "president":"Aurea Seefong",
+                "vp":"Mark Schutzius",
+                "primary_email":"aurea.r.seefong.mil@mail.mil",
+                "secondary_email":"mark.schutzius.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -117.6,
+                    47.6
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Hill AFB",
+                "location":"Ogden, UT",
+                "lat":"41.1",
+                "lon":"-112",
+                "president":"Bryan Butler",
+                "vp":"Steven Bayne",
+                "primary_email":"bryan.butler.1@us.af.mil",
+                "secondary_email":"steven.bayne@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -112,
+                    41.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Los Angeles AFB",
+                "location":"El Segundo, CA",
+                "lat":"33.9",
+                "lon":"-118.4",
+                "president":"Oshane Wint",
+                "vp":"Ciara-Dawn Alison-Konteh",
+                "primary_email":"oshane.wint.1@us.af.mil",
+                "secondary_email":"ciara-dawn.alison-konteh@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -118.4,
+                    33.9
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"March Air Reserve Base",
+                "location":"Riverside, CA",
+                "lat":"33.9",
+                "lon":"-117.3",
+                "president":"Tai Sunnanon & Ryan McGilvray",
+                "vp":"Weiquiang Wang",
+                "primary_email":"tai.sunnanon@us.af.mil",
+                "secondary_email":"ryan.mcgilvray@us.af.mil",
+                "org_email":"weiqiang.wang@us.af.mil"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -117.3,
+                    33.9
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"McChord AFB",
+                "location":"Tacoma, WA",
+                "lat":"47.1",
+                "lon":"-122.5",
+                "president":"Cheyenne Rolon",
+                "vp":"Phebe Cornell",
+                "primary_email":"cheyenne.rolon@us.af.mil",
+                "secondary_email":"phebe.cornell.1@us.af.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -122.5,
+                    47.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Mountain Home AFB",
+                "location":"Mountain Home, ID",
+                "lat":"43",
+                "lon":"-115.9",
+                "president":"Lochlin Deeks",
+                "vp":"Anastasia Reinhart",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -115.9,
+                    43
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Nellis AFB",
+                "location":"Las Vegas, NV",
+                "lat":"36.2",
+                "lon":"-115",
+                "president":"Francoise Douala",
+                "vp":"Nikki Traylor",
+                "primary_email":"francoise.douala.1@us.af.mil",
+                "secondary_email":"nicole.e.traylor.mil@mail",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -115,
+                    36.2
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Travis AFB",
+                "location":"Fairfield, CA",
+                "lat":"38.3",
+                "lon":"-121.9",
+                "president":"Jillian Buck",
+                "vp":"Michael Johnson",
+                "primary_email":"jillian.p.buck.mil@mail.mil",
+                "secondary_email":"michael.w.johnson657.mil@mail.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -121.9,
+                    38.3
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Western Region",
+                "division":"West Division",
+                "base":"Vandenberg AFB",
+                "location":"Lompoc, CA",
+                "lat":"34.7",
+                "lon":"-120.5",
+                "president":"Laura Kelly",
+                "vp":"Zoe Colgan",
+                "primary_email":"None",
+                "secondary_email":"zoe.v.colgan.mil@mail.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -120.5,
+                    34.7
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"North Division",
+                "base":"Dover AFB",
+                "location":"Dover, DE",
+                "lat":"39.1",
+                "lon":"-75.5",
+                "president":"Dustin Bohall",
+                "vp":"Sarah Cokely",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.5,
+                    39.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"North Division",
+                "base":"Hanscom AFB",
+                "location":"Lincoln, MA",
+                "lat":"42.5",
+                "lon":"-71.3",
+                "president":"Joshua Scollo",
+                "vp":"Jonathan Belveal",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -71.3,
+                    42.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"North Division",
+                "base":"McGuire AFB",
+                "location":"Trenton, NJ",
+                "lat":"40",
+                "lon":"-74.6",
+                "president":"Elizabeth Hill",
+                "vp":"Andrew Auerbach",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -74.6,
+                    40
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"North Division",
+                "base":"Wright-Patterson AFB",
+                "location":"Dayton, OH",
+                "lat":"39.8",
+                "lon":"-84.1",
+                "president":"Maygan Rhodes",
+                "vp":"Odis Tucci",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -84.1,
+                    39.8
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"North Division",
+                "base":"Willow Grove/Horsham ANG",
+                "location":"Horsham Township, PA",
+                "lat":"40.2",
+                "lon":"-75.1",
+                "president":"VACANT",
+                "vp":"VACANT",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -75.1,
+                    40.2
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"Arnold AFB",
+                "location":"Tullahoma, TN",
+                "lat":"35.4",
+                "lon":"-86",
+                "president":"Ryan Boudreaux",
+                "vp":"Adam McKenzie",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86,
+                    35.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"JB Charleston",
+                "location":"Charleston, SC",
+                "lat":"32.9",
+                "lon":"-80.1",
+                "president":"Andrew Jones",
+                "vp":"Robert Huebel",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -80.1,
+                    32.9
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"Columbus AFB",
+                "location":"Columbus, MS",
+                "lat":"33.6",
+                "lon":"-88.5",
+                "president":"Britney Alonzo",
+                "vp":"John Morrow",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -88.5,
+                    33.6
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"JB Langley",
+                "location":"Hampton, VA",
+                "lat":"37.1",
+                "lon":"-76.5",
+                "president":"Annie Volmer",
+                "vp":"Katie Pejka",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -76.5,
+                    37.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"Pope Field",
+                "location":"Fayetteville, NC",
+                "lat":"35.2",
+                "lon":"-79",
+                "president":"Savannah Elms",
+                "vp":"Tim Rafferty",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -79,
+                    35.2
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"Scott AFB",
+                "location":"Belleville, IL",
+                "lat":"38.5",
+                "lon":"-89.9",
+                "president":"Dustin Gooden",
+                "vp":"Clay Chaffin",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -89.9,
+                    38.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"Seymour-Johnson AFB",
+                "location":"Goldsboro, NC",
+                "lat":"35.4",
+                "lon":"-78",
+                "president":"P. Anne Bradley",
+                "vp":"Reed McGuire",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -78,
+                    35.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"Shaw AFB",
+                "location":"Sumter, SC",
+                "lat":"34",
+                "lon":"-80.5",
+                "president":"Rob Garvis",
+                "vp":"Meagan Whitaker",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -80.5,
+                    34
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"JB Andrews/National Capital Region",
+                "location":"Camp Springs, MD",
+                "lat":"38.8",
+                "lon":"-76.9",
+                "president":"Ja'llen Ricks",
+                "vp":"Laura Russo",
+                "primary_email":"jallen.o.ricks@mail.mil",
+                "secondary_email":"jricks395@gmail.com",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -76.9,
+                    38.8
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"Central Division",
+                "base":"JB Bolling",
+                "location":"Washington, D.C.",
+                "lat":"38.5",
+                "lon":"-77",
+                "president":"Joanna Choi",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -77,
+                    38.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"Eglin AFB",
+                "location":"Valparaiso, FL",
+                "lat":"30.5",
+                "lon":"-86.6",
+                "president":"Charles Cowart",
+                "vp":"Anna Burneske",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86.6,
+                    30.5
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"Hurlburt Field",
+                "location":"Mary Esther, FL",
+                "lat":"30.4",
+                "lon":"-86.7",
+                "president":"VACANT",
+                "vp":"Julie Kessler",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86.7,
+                    30.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"Keesler AFB",
+                "location":"Biloxi, MS",
+                "lat":"30.4",
+                "lon":"-88.9",
+                "president":"Jeffrey Golson",
+                "vp":"Melissa Gigl",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -88.9,
+                    30.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"Patrick Space Force Base",
+                "location":"Brevard County, FL",
+                "lat":"28.2",
+                "lon":"-80.6",
+                "president":"Chris Mansfield",
+                "vp":"Christopher Daughtery",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -80.6,
+                    28.2
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"MacDill AFB",
+                "location":"Tampa, FL",
+                "lat":"27.9",
+                "lon":"-82.5",
+                "president":"Jeff (Michael) Allen",
+                "vp":"John Poole",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -82.5,
+                    27.9
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"Maxwell/Gunter AFB",
+                "location":"Montgomery, AL",
+                "lat":"32.4",
+                "lon":"-86.4",
+                "president":"Alexander Ko",
+                "vp":"Jonathan Sumerlin",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -86.4,
+                    32.4
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"Moody AFB",
+                "location":"Valdosta, GA",
+                "lat":"31",
+                "lon":"-83.2",
+                "president":"John (Erik) Ritschard",
+                "vp":"Nate Oslund",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -83.2,
+                    31
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"Robins AFB",
+                "location":"Warner Robins, GA",
+                "lat":"32.6",
+                "lon":"-83.6",
+                "president":"Danelle Mcginnis",
+                "vp":"VACANT",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -83.6,
+                    32.6
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Eastern Region",
+                "division":"South Division",
+                "base":"Tyndall AFB",
+                "location":"Panama City, FL",
+                "lat":"30.1",
+                "lon":"-85.6",
+                "president":"Nathan Wells",
+                "vp":"Felicia Wells",
+                "primary_email":"None",
+                "secondary_email":"None",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -85.6,
+                    30.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Hickam AFB DISA",
+                "location":"Honolulu, HI",
+                "lat":"21.3",
+                "lon":"-157.9",
+                "president":"Robert Benson",
+                "vp":"Emeka Nwankwo",
+                "primary_email":"robert.g.benson33.mil@mail.mil",
+                "secondary_email":"nnaemeka.j.nwankwo.mil@mail.mil",
+                "org_email":"None"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -157.9,
+                    21.3
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Hickam AFB",
+                "location":"Honolulu, HI",
+                "lat":"21.3",
+                "lon":"-157.9",
+                "president":"Tiana Kimura",
+                "vp":"Natalie Burke",
+                "primary_email":"tiana.l.kimura.mil@mail.mil",
+                "secondary_email":"natalie.k.burke.mil@socom.mil",
+                "org_email":"None",
+                "website":"https://hickam.eim.pacaf.af.mil/Hickam%20CGOC/default.aspx"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -157.9,
+                    21.3
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Andersen AFB",
+                "location":"Yigo, Guam",
+                "lat":"13.6",
+                "lon":"144.9",
+                "president":"Irene Mitchell",
+                "vp":"Meara McCarthy",
+                "primary_email":"irene.mitchell.2@us.af.mil",
+                "secondary_email":"meara.mccarthy@us.af.mil",
+                "org_email":"36WG.Andersen.CGOC@us.af.mil",
+                "website":"https://andersen.eis.pacaf.af.mil/CommunitySites/CGOC/_layouts/15/start.aspx#/SitePages/Community%20Home.aspx",
+                "facebook":"https://hickam.eim.pacaf.af.mil/Hickam%20CGOC/default.aspx"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    144.9,
+                    13.6
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Osan Air Base",
+                "location":"Gyeonggi-do, South Korea",
+                "lat":"37.1",
+                "lon":"127",
+                "president":"Christian Halvorson",
+                "vp":"Amanda Schultz",
+                "primary_email":"christian.halvorson@us.af.mil",
+                "secondary_email":"amanda.schultz.5@us.af.mil",
+                "org_email":"osancgocexecutives@us.af.mil",
+                "website":"https://osan.eim.pacaf.af.mil/sites/CGOC/default.aspx"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    127,
+                    37.1
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Kunsan Air Base",
+                "location":"Jeollabuk-do, South Korea",
+                "lat":"35.9",
+                "lon":"126.6",
+                "president":"Ryan Ward",
+                "vp":"Andrew Munnerlyn",
+                "primary_email":"ryan.ward.21@us.af.mil",
+                "secondary_email":"None",
+                "org_email":"8fw.cgoc@us.af.mil",
+                "facebook":"www.facebook.com/KunsanCGOC"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    126.6,
+                    35.9
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Eielson AFB",
+                "location":"Fairbanks, AK",
+                "lat":"64.6",
+                "lon":"-147.1",
+                "president":"Jeremy Matis",
+                "vp":"Shawn Cagle",
+                "primary_email":"jeremy.matis.2@us.af.mil",
+                "secondary_email":"shawn.cagle.1@us.af.mil",
+                "org_email":"None",
+                "facebook":"https://www.facebook.com/EielsonCGOC/"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -147.1,
+                    64.6
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"JB Elmendorf",
+                "location":"Anchorage, AK",
+                "lat":"61.3",
+                "lon":"-149.8",
+                "president":"Drew Gonzalez",
+                "vp":"Dustin Herridge",
+                "primary_email":"andrew.gonzalez.9@us.af.mil",
+                "secondary_email":"dustin.herridge@us.af.mil",
+                "org_email":"None",
+                "website":"https://portal.elmendorf.af.mil/units/AFLocal/Company%20Grade%20Officer%20Association/default.aspx",
+                "facebook":"https://www.facebook.com/groups/175756949119492/#!/groups/175756949119492/"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    -149.8,
+                    61.3
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Misawa AFB",
+                "location":"Misawa, Japan",
+                "lat":"40.7",
+                "lon":"141.4",
+                "president":"Briya Tichenor-Jones",
+                "vp":"Marisa Sligh",
+                "primary_email":"briya.tichenorjones@us.af.mil",
+                "secondary_email":"marisa.sligh.1@us.af.mil",
+                "org_email":"35fw.cgoc@us.af.mil",
+                "facebook":"http://www.facebook.com/pages/Misawa-CGOC/221493584544547"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    141.4,
+                    40.7
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Yokota AFB",
+                "location":"Tokyo, Japan",
+                "lat":"35.7",
+                "lon":"139.3",
+                "president":"Megan Nguyen",
+                "vp":"Angie P. Toro",
+                "primary_email":"megan.k.nguyen.mil@mail.mil",
+                "secondary_email":"angie.p.toro.mil@mail.mil",
+                "org_email":"yokota.cgoc@us.af.mil"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    139.3,
+                    35.7
+                ]
+            }
+        },
+        {
+            "type":"Feature",
+            "properties":{
+                "region":"Pacific Region",
+                "base":"Kadena AFB",
+                "location":"Okinawa, Japan",
+                "lat":"26.4",
+                "lon":"127.8",
+                "president":"Jenna McGinnis",
+                "vp":"VACANT",
+                "primary_email":"jenna.maginnis@us.af.mil",
+                "secondary_email":"None",
+                "org_email":"kadena.cgoc.exec.council@us.af.mil",
+                "website":"https://afkm.wpafb.af.mil/KadenaCGOC"
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[
+                    127.8,
+                    26.4
+                ]
+            }
+        }
+    ]
+}
