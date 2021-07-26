@@ -404,7 +404,7 @@
                 "division":"North Division",
                 "base":"Peterson AFB/USAFA",
                 "location":"Colorado Springs, CO",
-                "lat":"30.8",
+                "lat":"38.8",
                 "lon":"-104.7",
                 "president":"Kyle Brandt",
                 "vp":"Victoria Myers",
@@ -416,7 +416,7 @@
                 "type":"Point",
                 "coordinates":[
                     -104.7,
-                    30.8
+                    38.8
                 ]
             }
         },
