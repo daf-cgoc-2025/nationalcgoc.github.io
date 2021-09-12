@@ -32,6 +32,16 @@ map.on('drag', function() {
 var geojsonLayer = new L.GeoJSON.AJAX("../js/installations.geojson", {onEachFeature:popUp});
 
 function popUp(feature, layer) {
+
+  // validate region
+  var region = "";
+
+  if (!feature.properties.region) {
+      region = ""; 
+  } else {
+    region = feature.properties.region;
+  }
+
   // validate division
   var division = "";
 
@@ -41,17 +51,30 @@ function popUp(feature, layer) {
     division = ', ' + feature.properties.division;
   }
 
+  // validate branch
+  var branch = "";
+
+  if (!feature.properties.branch) {
+      branch = ""; 
+  } else {
+    branch = ', ' + feature.properties.branch;
+  }
+
   // validate email
   var emailStr = "";
 
-  if (feature.properties.primary_email === "None") {
-      if (feature.properties.secondary_email === "None") {
-        emailStr = "";
-      } else {
-        emailStr = '<a href="mailto:' + feature.properties.secondary_email + '">Email this Council</a>' + '<br>';
-      }
+  if (feature.properties.org_email === "None") {
+    if (feature.properties.primary_email === "None") {
+        if (feature.properties.secondary_email === "None") {
+          emailStr = "";
+        } else {
+          emailStr = '<a href="mailto:' + feature.properties.secondary_email + '">Email this Council</a>' + '<br>';
+        }
+    } else {
+      emailStr = '<a href="mailto:' + feature.properties.primary_email + '">Email this Council</a>' + '<br>';
+    }
   } else {
-    emailStr = '<a href="mailto:' + feature.properties.primary_email + '">Email this Council</a>' + '<br>';
+    emailStr = '<a href="mailto:' + feature.properties.org_email + '">Email this Council</a>' + '<br>';
   }
 
   // validate website
@@ -85,7 +108,7 @@ function popUp(feature, layer) {
   var popupContent = 
     '<b>' + feature.properties.base + '</b>' + '<br>' + 
     feature.properties.location + '<br>' +
-    feature.properties.region + division + '<br>' +
+    region + division + branch +'<br>' +
     '<br>' +
     'President: ' + feature.properties.president + '<br>' +
     'Vice President: ' + feature.properties.vp + '<br>' +

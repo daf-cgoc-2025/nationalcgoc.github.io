@@ -211,26 +211,6 @@
       "properties": {
         "region": "Western Region",
         "division": "North Division",
-        "base": "Buckley AFB",
-        "location": "Aurora, CO",
-        "lat": "39.7",
-        "lon": "-104.7",
-        "president": "Sydney Heart",
-        "vp": "VACANT",
-        "primary_email": "Sydney.heart.1@us.af.mil",
-        "secondary_email": "None",
-        "org_email": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-104.7, 39.7]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Western Region",
-        "division": "North Division",
         "base": "Ellsworth AFB",
         "location": "Box Elder, SD",
         "lat": "44.1",
@@ -351,27 +331,7 @@
       "properties": {
         "region": "Western Region",
         "division": "North Division",
-        "base": "Peterson AFB/USAFA",
-        "location": "Colorado Springs, CO",
-        "lat": "38.8",
-        "lon": "-104.7",
-        "president": "Kyle Brandt",
-        "vp": "Victoria Myers",
-        "primary_email": "kyle.brandt.1@us.af.mil",
-        "secondary_email": "victoria.b.myers.mil@mail.mil",
-        "org_email": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-104.7, 38.8]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Western Region",
-        "division": "North Division",
-        "base": "Schriever AFB",
+        "base": "Schriever SFB",
         "location": "Colorado Springs, CO",
         "lat": "38.7",
         "lon": "-104.5",
@@ -873,6 +833,7 @@
         "division": "North Division",
         "base": "Willow Grove/Horsham ANG",
         "location": "Horsham Township, PA",
+        "branch": "ANG",
         "lat": "40.2",
         "lon": "-75.1",
         "president": "VACANT",
@@ -915,8 +876,8 @@
         "location": "Charleston, SC",
         "lat": "32.9",
         "lon": "-80.1",
-        "president": "Andrew Jones",
-        "vp": "Robert Huebel",
+        "president": "Anna Buntyn",
+        "vp": "None",
         "primary_email": "None",
         "secondary_email": "None",
         "org_email": "None"
@@ -935,8 +896,8 @@
         "location": "Columbus, MS",
         "lat": "33.6",
         "lon": "-88.5",
-        "president": "Britney Alonzo",
-        "vp": "John Morrow",
+        "president": "Jackae Johnson",
+        "vp": "None",
         "primary_email": "None",
         "secondary_email": "None",
         "org_email": "None"
@@ -1094,11 +1055,12 @@
         "location": "Valparaiso, FL",
         "lat": "30.5",
         "lon": "-86.6",
-        "president": "Charles Cowart",
-        "vp": "Anna Burneske",
+        "president": "Henry Edwards",
+        "vp": "Michelle McClard",
         "primary_email": "None",
         "secondary_email": "None",
-        "org_email": "None"
+        "org_email": "None",
+        "facebook": "https://www.facebook.com/groups/EglinCGOC"
       },
       "geometry": {
         "type": "Point",
@@ -1114,8 +1076,8 @@
         "location": "Mary Esther, FL",
         "lat": "30.4",
         "lon": "-86.7",
-        "president": "VACANT",
-        "vp": "Julie Kessler",
+        "president": "Andrew Groleau",
+        "vp": "None",
         "primary_email": "None",
         "secondary_email": "None",
         "org_email": "None"
@@ -1134,11 +1096,12 @@
         "location": "Biloxi, MS",
         "lat": "30.4",
         "lon": "-88.9",
-        "president": "Jeffrey Golson",
-        "vp": "Melissa Gigl",
-        "primary_email": "None",
+        "president": "BriAnna Green",
+        "vp": "Tesla Davis",
+        "primary_email": "cgockeesler@gmail.com",
         "secondary_email": "None",
-        "org_email": "None"
+        "org_email": "None",
+        "facebook": "https://www.facebook.com/KeeslerCGOC/"
       },
       "geometry": {
         "type": "Point",
@@ -1152,6 +1115,7 @@
         "division": "South Division",
         "base": "Patrick Space Force Base",
         "location": "Brevard County, FL",
+        "branch": "USSF",
         "lat": "28.2",
         "lon": "-80.6",
         "president": "Chris Mansfield",
@@ -1477,8 +1441,7 @@
         "vp": "None",
         "primary_email": "None",
         "secondary_email": "None",
-        "org_email": "None",
-        "website": "None"
+        "org_email": "None"
       },
       "geometry": {
         "type": "Point",
@@ -1498,7 +1461,7 @@
         "primary_email": "gonca.dequeant@us.af.mil",
         "secondary_email": "megan.morrissey.1@us.af.mil",
         "org_email": "None",
-        "website": "https://www.facebook.com/groups/709721879154690"
+        "facebook": "https://www.facebook.com/groups/709721879154690"
       },
       "geometry": {
         "type": "Point",
@@ -1518,7 +1481,7 @@
         "primary_email": "Naomi.villalobos.1@us.af.mil",
         "secondary_email": "evan.feno.mil@mail.mil",
         "org_email": "None",
-        "website": "https://www.facebook.com/groups/772709296164238"
+        "facebook": "https://www.facebook.com/groups/772709296164238"
       },
       "geometry": {
         "type": "Point",
@@ -1538,7 +1501,7 @@
         "primary_email": "None",
         "secondary_email": "None",
         "org_email": "None",
-        "website": "https://www.facebook.com/AUABCGOC/"
+        "facebook": "https://www.facebook.com/AUABCGOC/"
       },
       "geometry": {
         "type": "Point",
@@ -1558,11 +1521,166 @@
         "primary_email": "jennifer93.luong@gmail.com",
         "secondary_email": "jennifer.luong@us.af.mil",
         "org_email": "ramstein.kmc.cgoc@us.af.mil",
-        "website": "https://www.facebook.com/groups/KMCCGOC/"
+        "facebook": "https://www.facebook.com/groups/KMCCGOC/"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [7, 49]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Pacific Region",
+        "base": "Osan AB",
+        "location": "Gyeonggi-do, South Korea",
+        "lat": "37.1",
+        "lon": "127",
+        "president": "Christian Halvorson",
+        "vp": "Amanda Schultz",
+        "org_email": "osancgocexecutives@us.af.mil",
+        "primary_email": "christian.halvorson@us.af.mil",
+        "secondary_email": "amanda.schultz.5@us.af.mil",
+        "website": "https://osan.eim.pacaf.af.mil/sites/CGOC/default.aspx"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [127, 37.1]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Pacific Region",
+        "base": "Andersen AB",
+        "location": "Yigo, Guam",
+        "lat": "13.6",
+        "lon": "144.9",
+        "president": "Irene Mitchell",
+        "vp": "Meara McCarthy",
+        "primary_email": "irene.mitchell.2@us.af.mil",
+        "secondary_email": "meara.mccarthy@us.af.mil",
+        "org_email": "36WG.Andersen.CGOC@us.af.mil",
+        "website": "https://andersen.eis.pacaf.af.mil/CommunitySites/CGOC/_layouts/15/start.aspx#/SitePages/Community%20Home.aspx",
+        "facebook": "https://hickam.eim.pacaf.af.mil/Hickam%20CGOC/default.aspx"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [144.9, 13.6]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Western Region",
+        "base": "Buckley SFB",
+        "location": "Aurora, CO",
+        "branch": "USSF",
+        "lat": "39.7",
+        "lon": "-104.7",
+        "president": "Sydney Heart",
+        "vp": "VACANT",
+        "primary_email": "Sydney.heart.1@us.af.mil",
+        "secondary_email": "",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.7, 39.7]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Western Region",
+        "division": "North Division",
+        "base": "Peterson SFB/USAFA",
+        "location": "Colorado Springs, CO",
+        "branch": "USSF",
+        "lat": "38.8",
+        "lon": "-104.7",
+        "president": "Kyle Brandt",
+        "vp": "Victoria Myers",
+        "primary_email": "kyle.brandt.1@us.af.mil",
+        "secondary_email": "victoria.b.myers.mil@mail.mil",
+        "org_email": "",
+        "website": "",
+        "facebook": "https://www.facebook.com/groups/RMCGOC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.7, 38.8]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Eastern Region",
+        "division": "North Division",
+        "base": "Eastern Air Defense Sector",
+        "location": "Rome, NY",
+        "branch": "NY ANG",
+        "lat": "43.2",
+        "lon": "-75.5",
+        "president": "Matthew Cummings",
+        "vp": "Quinn Tilley",
+        "primary_email": "Cummings026@gmail.com",
+        "secondary_email": "Quinn.tilley.1@gmail.com",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.5, 43.2]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Western Region",
+        "division": "North Division",
+        "base": "Duluth ANGB",
+        "location": "Duluth, MN",
+        "branch": "MN ANG",
+        "lat": "46.8",
+        "lon": "-92.1",
+        "president": "Mike Wilson",
+        "vp": "VACANT",
+        "primary_email": "mike3478@gmail.com",
+        "secondary_email": "",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-92.1, 46.8]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "",
+        "division": "",
+        "base": "Holm Center",
+        "location": "Montgomery, AL",
+        "branch": "",
+        "lat": "32.4",
+        "lon": "-86.4",
+        "president": "Ryan Kittle",
+        "vp": "Joshua Foley",
+        "primary_email": "rkittle@clarkson.edu",
+        "secondary_email": "joshua.foley.5@us.af.mil",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-86.4, 32.4]
       }
     }
   ]
