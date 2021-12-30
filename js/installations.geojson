@@ -195,10 +195,10 @@
         "location": "Knob Noster, MO",
         "lat": "38.7",
         "lon": "-93.5",
-        "president": "Eric Johnson",
-        "vp": "Nathan Munford",
-        "primary_email": "eric.johnson.138@us.af.mil",
-        "secondary_email": "nathan.munford@us.af.mil",
+        "president": "Lawrence Onochie",
+        "vp": "Adam Hastriter",
+        "primary_email": "lawrence.onochie.1@us.af.mil",
+        "secondary_email": "adam.hastriter@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -395,10 +395,10 @@
         "location": "Abilene, TX",
         "lat": "32.4",
         "lon": "-99.8",
-        "president": "Jonah Whitt",
-        "vp": "Carlos Flores",
-        "primary_email": "jonah.whitt@us.af.mil",
-        "secondary_email": "carlos.flores.12@us.af.mil",
+        "president": "Brianna Johndrow",
+        "vp": "Oyeyemi Aborishade",
+        "primary_email": "brianna.johndrow.2@us.af.mil",
+        "secondary_email": "oyeyemi.aborishade@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -555,10 +555,10 @@
         "location": "Edwards, CA",
         "lat": "34.9",
         "lon": "-117.9",
-        "president": "Rebecca Saathoff",
-        "vp": "Shaun Wheldon",
-        "primary_email": "rebecca.saathoff.1@us.af.mil",
-        "secondary_email": "Shuan.wheldon@us.af.mil",
+        "president": "Johan Hsu",
+        "vp": "Luke Babich",
+        "primary_email": "johan.hsu.1@us.af.mil",
+        "secondary_email": "luke.babich.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1178,8 +1178,8 @@
         "location": "Valdosta, GA",
         "lat": "31",
         "lon": "-83.2",
-        "president": "John (Erik) Ritschard",
-        "vp": "Nate Oslund",
+        "president": "Shelby Leverich",
+        "vp": "Ciera White",
         "primary_email": "None",
         "secondary_email": "None",
         "org_email": "None"
@@ -1218,11 +1218,12 @@
         "location": "Panama City, FL",
         "lat": "30.1",
         "lon": "-85.6",
-        "president": "Nathan Wells",
-        "vp": "Felicia Wells",
-        "primary_email": "None",
-        "secondary_email": "None",
-        "org_email": "None"
+        "president": "Dan White",
+        "vp": "Cameron Smith",
+        "primary_email": "daniel.white.29@us.af.mil",
+        "secondary_email": "cameron.s.smith3.mil@mail.mil",
+        "org_email": "None",
+        "facebook": "https://www.facebook.com/tyndall.cgoc/"
       },
       "geometry": {
         "type": "Point",
@@ -1681,6 +1682,75 @@
       "geometry": {
         "type": "Point",
         "coordinates": [-86.4, 32.4]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "",
+        "division": "",
+        "base": "Air Force Recruiting Service",
+        "location": "San Antonio, TX",
+        "branch": "",
+        "lat": "29.4",
+        "lon": "-98.5",
+        "president": "Jennifer DeVoe",
+        "vp": "None",
+        "primary_email": "jennifer.devoe@us.af.mil",
+        "secondary_email": "",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.5, 29.4]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Eastern Region",
+        "division": "South Division",
+        "base": "Soto Cano AB",
+        "location": "Honduras",
+        "branch": "",
+        "lat": "14.4",
+        "lon": "-87.6",
+        "president": "Ken Parrish",
+        "vp": "None",
+        "primary_email": "kenneth.parrish.2@us.af.mil",
+        "secondary_email": "",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.6, 14.4]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Eastern Region",
+        "division": "North Division",
+        "base": "Biddle ANGB",
+        "location": "Horsham, PA",
+        "branch": "ANG",
+        "lat": "40.2",
+        "lon": "-75.1",
+        "president": "Rick Kocher",
+        "vp": "None",
+        "primary_email": "rick.kocher@gmail.com",
+        "secondary_email": "",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.1, 40.2]
       }
     }
   ]
