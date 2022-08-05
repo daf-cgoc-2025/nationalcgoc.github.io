@@ -1577,6 +1577,11 @@ ul#nav li.current a:after {
 	margin-bottom: 0;
 }
 
+#team-wrapper .member h4 {
+	line-height: 20px;
+	margin-bottom: 0;
+}
+
 #team-wrapper .member span {
 	position: relative;
 	font-size: 13px;
