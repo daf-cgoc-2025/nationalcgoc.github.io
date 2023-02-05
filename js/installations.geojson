@@ -755,10 +755,10 @@
         "location": "Dover, DE",
         "lat": "39.1",
         "lon": "-75.5",
-        "president": "Dustin Bohall",
-        "vp": "Sarah Cokely",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Travis Lockwood",
+        "vp": "Nikolaus Bihlmeyer",
+        "primary_email": "travis.lockwood@us.af.mil",
+        "secondary_email": "nikolaus.bihlmeyer.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -775,10 +775,10 @@
         "location": "Lincoln, MA",
         "lat": "42.5",
         "lon": "-71.3",
-        "president": "Joshua Scollo",
-        "vp": "Jonathan Belveal",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Zacchaaeus Mcewen",
+        "vp": "Isam Boukattaya",
+        "primary_email": "zacchaeus.mcewen.1@us.af.mil",
+        "secondary_email": "isam.boukattaya.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -795,10 +795,10 @@
         "location": "Trenton, NJ",
         "lat": "40",
         "lon": "-74.6",
-        "president": "Elizabeth Hill",
-        "vp": "Andrew Auerbach",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Spencer Hardesty",
+        "vp": "James Sigler",
+        "primary_email": "spencer.hardesty@us.af.mil",
+        "secondary_email": "james.sigler.3@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -815,10 +815,10 @@
         "location": "Dayton, OH",
         "lat": "39.8",
         "lon": "-84.1",
-        "president": "Maygan Rhodes",
-        "vp": "Odis Tucci",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Dean LaMonica",
+        "vp": "Zoe Colgan",
+        "primary_email": "dean.lamonica.1@us.af.mil",
+        "secondary_email": "zoe.colgan.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -858,7 +858,7 @@
         "lon": "-86",
         "president": "Ryan Boudreaux",
         "vp": "Adam McKenzie",
-        "primary_email": "None",
+        "primary_email": "ryan.boudreaux@us.af.mil",
         "secondary_email": "None",
         "org_email": "None"
       },
@@ -878,7 +878,7 @@
         "lon": "-80.1",
         "president": "Anna Buntyn",
         "vp": "None",
-        "primary_email": "None",
+        "primary_email": "anna.buntyn@us.af.mil",
         "secondary_email": "None",
         "org_email": "None"
       },
@@ -896,10 +896,10 @@
         "location": "Columbus, MS",
         "lat": "33.6",
         "lon": "-88.5",
-        "president": "Jackae Johnson",
-        "vp": "None",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Camryn Spaziani",
+        "vp": "Charles Burns",
+        "primary_email": "camryn.spaziani.1@us.af.mil",
+        "secondary_email": "charles.burns.8@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -916,9 +916,9 @@
         "location": "Hampton, VA",
         "lat": "37.1",
         "lon": "-76.5",
-        "president": "Annie Volmer",
-        "vp": "Katie Pejka",
-        "primary_email": "None",
+        "president": "Chris Mansfield",
+        "vp": "None",
+        "primary_email": "christopher.mansfield.8@us.af.mil",
         "secondary_email": "None",
         "org_email": "None"
       },
@@ -936,10 +936,10 @@
         "location": "Fayetteville, NC",
         "lat": "35.2",
         "lon": "-79",
-        "president": "Savannah Elms",
-        "vp": "Tim Rafferty",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Christine Krimmer",
+        "vp": "Morgan Hamilton",
+        "primary_email": "christine.krimmer.1@us.af.mil",
+        "secondary_email": "morgan.hamilton.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -956,10 +956,10 @@
         "location": "Belleville, IL",
         "lat": "38.5",
         "lon": "-89.9",
-        "president": "Dustin Gooden",
-        "vp": "Clay Chaffin",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Drew Spoeri",
+        "vp": "Nehemiah Jackson",
+        "primary_email": "andrew.spoeri.1@us.af.mil",
+        "secondary_email": "nehemiah.jackson.3@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -976,9 +976,9 @@
         "location": "Goldsboro, NC",
         "lat": "35.4",
         "lon": "-78",
-        "president": "P. Anne Bradley",
-        "vp": "Reed McGuire",
-        "primary_email": "None",
+        "president": "William Wright",
+        "vp": "None",
+        "primary_email": "william.wright.63@us.af.mil",
         "secondary_email": "None",
         "org_email": "None"
       },
@@ -996,10 +996,10 @@
         "location": "Sumter, SC",
         "lat": "34",
         "lon": "-80.5",
-        "president": "Tatiana Pushkarewicz",
-        "vp": "Patrick Ford",
-        "primary_email": "tatiana.pushkarewicz.1@us.af.mil",
-        "secondary_email": "Patrick.Ford.7@us.af.mil",
+        "president": "Danielle Feist",
+        "vp": "Kyle Grant",
+        "primary_email": "danielle.feist@us.af.mil",
+        "secondary_email": "kyle.grant.8@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1016,10 +1016,10 @@
         "location": "Camp Springs, MD",
         "lat": "38.8",
         "lon": "-76.9",
-        "president": "Ja'llen Ricks",
-        "vp": "Laura Russo",
-        "primary_email": "jallen.o.ricks@mail.mil",
-        "secondary_email": "jricks395@gmail.com",
+        "president": "Matthew Patschull",
+        "vp": "Kathryn Lopez",
+        "primary_email": "matthew.s.patschull.mil@health.mil",
+        "secondary_email": "kathryn.lopez.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1036,9 +1036,10 @@
         "location": "Washington, D.C.",
         "lat": "38.5",
         "lon": "-77",
-        "president": "Joanna Choi",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Anastasia Crooks",
+        "vp": "Roxanne Paleo",
+        "primary_email": "anastasia.crooks@us.af.mil",
+        "secondary_email": "roxanne.paleo.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1076,10 +1077,10 @@
         "location": "Mary Esther, FL",
         "lat": "30.4",
         "lon": "-86.7",
-        "president": "Andrew Groleau",
-        "vp": "None",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Christian Moore",
+        "vp": "Justin Haller",
+        "primary_email": "christian.moore.24@us.af.mil",
+        "secondary_email": "justin.j.haller.mil@health.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1096,11 +1097,11 @@
         "location": "Biloxi, MS",
         "lat": "30.4",
         "lon": "-88.9",
-        "president": "BriAnna Green",
-        "vp": "Tesla Davis",
-        "primary_email": "cgockeesler@gmail.com",
+        "president": "Robert Tyson",
+        "vp": "None",
+        "primary_email": "robert.tyson.7@us.af.mil",
         "secondary_email": "None",
-        "org_email": "None",
+        "org_email": "cgockeesler@gmail.com",
         "facebook": "https://www.facebook.com/KeeslerCGOC/"
       },
       "geometry": {
@@ -1120,8 +1121,8 @@
         "lon": "-80.6",
         "president": "Chris Mansfield",
         "vp": "Christopher Daughtery",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "primary_email": "christopher.mansfield.8@us.af.mil",
+        "secondary_email": "daughech@nro.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1138,9 +1139,9 @@
         "location": "Tampa, FL",
         "lat": "27.9",
         "lon": "-82.5",
-        "president": "Jeff (Michael) Allen",
-        "vp": "John Poole",
-        "primary_email": "None",
+        "president": "Ushane Locke",
+        "vp": "None",
+        "primary_email": "ushane.locke.1@us.af.mil",
         "secondary_email": "None",
         "org_email": "None"
       },
@@ -1160,8 +1161,8 @@
         "lon": "-86.4",
         "president": "Alexander Ko",
         "vp": "Jonathan Sumerlin",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "primary_email": "alexander.ko.1@us.af.mil",
+        "secondary_email": "jonathan.sumerlin@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1178,10 +1179,10 @@
         "location": "Valdosta, GA",
         "lat": "31",
         "lon": "-83.2",
-        "president": "Shelby Leverich",
+        "president": "Thomas De Maio",
         "vp": "Ciera White",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "primary_email": "thomas.de_maio.2@us.af.mil",
+        "secondary_email": "ciera.white.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1198,9 +1199,9 @@
         "location": "Warner Robins, GA",
         "lat": "32.6",
         "lon": "-83.6",
-        "president": "Danelle Mcginnis",
-        "vp": "VACANT",
-        "primary_email": "None",
+        "president": "Charmaine Clark",
+        "vp": "None",
+        "primary_email": "charmaine.clark.1@us.af.mil",
         "secondary_email": "None",
         "org_email": "None"
       },
@@ -1228,6 +1229,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [-85.6, 30.1]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Eastern Region",
+        "base": "Fort Meade",
+        "location": "Fort Meade, MD",
+        "lat": "39.1",
+        "lon": "-76.7",
+        "president": "Wade Reynolds",
+        "vp": "Nelson Whitney",
+        "primary_email": "wade.reynolds.1@us.af.mil",
+        "secondary_email": "thomas.whitney.7@us.af.mil",
+        "org_email": "None",
+        "facebook": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.7, 39.1]
       }
     },
     {
