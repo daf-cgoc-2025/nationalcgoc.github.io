@@ -1,0 +1,34 @@
+git notes
+
+//cd into the nationalcgoc.github.io folder
+
+git add . //stages files
+
+git commit -m "comments" //readies files with comments
+
+git push //pushes to repo
+
+MAC:
+
+CMD + SHIFT + R //reloads page & clears cachegit
+
+
+
+
+
+
+**28 Jan 2023**
+
+	Tech Director Taskers:
+			-- Update Western RD (Morcom)
+			-- Website traffic metrics
+			-- Slack: Exec channel
+				--- remove non exec members
+				--- Remove members not in our roster
+			-- SLACK bought the dafcgoc.org
+			-- merge Social Media as the last part of the About Us
+			-- refresh four main photos on Home Page
+				-- do we really need the 4 photos...
+				-- takes forever to load
+			-- facebook/IG af -> daf (Bri Johndow)
+			-- FTOC docs on Resources page
