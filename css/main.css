@@ -969,6 +969,26 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 /* carousel background images */
+.bg {
+  /* The image used */
+  background-image: url(../images/home-bg.jpg);
+
+  /* Full height */
+  height: 40%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 601px){
+	.bg {
+		background-image: url(../images/home-bg_mobile.jpg);
+		height: 10%; 
+	}
+}
+
 .first {
 	background: #0F1215 url(../images/home-bg.jpg) no-repeat center;
 }
@@ -1090,6 +1110,13 @@ ul#nav li.current a:after {
 	text-shadow: 0 1px 20px rgba(0, 0, 0, 0.6);
 	position: relative;    
 }
+@media only screen and (max-width: 601px){
+	.slider__caption {
+		font: 25px/1.3 "raleway-bold", sans-serif;
+	}
+}
+
+
 .slider__caption::after {
 	display: block;
 	background-color: #fdc501;
@@ -1106,6 +1133,11 @@ ul#nav li.current a:after {
 	text-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
 	width: 85%;
 	margin-top: 24px;    
+}
+@media only screen and (max-width: 601px){
+	.slider__txt {
+		font: 15px/1.9 "raleway-bold", sans-serif;
+	}
 }
 
 @-webkit-keyframes check {

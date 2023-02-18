@@ -13,7 +13,11 @@ MAC:
 CMD + SHIFT + R //reloads page & clears cachegit
 
 
-
+Domain Notes:
+	- Advance Options
+			-- Redirect Type: Permanent
+			-- Path Forwarding: Do not forward
+			-- Forwarding over SSL: SSL On
 
 
 
