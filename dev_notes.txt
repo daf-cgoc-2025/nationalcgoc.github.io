@@ -12,6 +12,10 @@ MAC:
 
 CMD + SHIFT + R //reloads page & clears cachegit
 
+*** HELPFUL RESOURCES ***
+YouTube (How to connect Git page to Google Domains):
+	--- https://www.youtube.com/watch?v=rKz6kIW4Uos
+
 
 Domain Notes:
 	- Advance Options
