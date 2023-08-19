@@ -17,11 +17,16 @@ YouTube (How to connect Git page to Google Domains):
 	--- https://www.youtube.com/watch?v=rKz6kIW4Uos
 
 
-Domain Notes:
+*** DOMAIN NOTES: ***
 	- Advance Options
 			-- Redirect Type: Permanent
 			-- Path Forwarding: Do not forward
 			-- Forwarding over SSL: SSL On
+
+
+*** EMAIL FORWARDING NOTES ***
+	- Emails sit in the the @afcgoc.org domain
+	- Emails can be received from domain email address but they can't be replied with the @afcgoc.org domain
 
 
 
