@@ -1,4 +1,4 @@
-git notes
+**** git notes ****
 
 //cd into the nationalcgoc.github.io folder
 
@@ -45,3 +45,7 @@ YouTube (How to connect Git page to Google Domains):
 				-- takes forever to load
 			-- facebook/IG af -> daf (Bri Johndow)
 			-- FTOC docs on Resources page
+
+*** GITHUB: Add users as contributors ***
+https://github.com/nationalcgoc/nationalcgoc.github.io/settings/access
+	-- Must be logged in as nationalcgoc user
