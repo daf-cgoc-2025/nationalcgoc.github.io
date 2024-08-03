@@ -696,7 +696,7 @@
         "lat": "36.2",
         "lon": "-115",
         "president": "Jhonathan Jimenez",
-        "vp": "Dennis Nguyen,
+        "vp": "Dennis Nguyen",
         "primary_email": "jhonathan.jimenez@us.af.mil",
         "secondary_email": "dennis.t.nguyen5.mil@health.mil",
         "org_email": "None"
@@ -797,7 +797,7 @@
         "lon": "-74.6",
         "president": "Robert Kitson",
         "vp": "Madelyn Torriano",
-        "primary_email": "robert.kitson@us.af.mil,
+        "primary_email": "robert.kitson@us.af.mil",
         "secondary_email": "madelyn.toriano.1@us.af.mil",
         "org_email": "None"
       },
