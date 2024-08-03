@@ -1666,7 +1666,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [36.5, 35.2]
+        "coordinates": [35.2, 36.5]
       }
     },
     {
@@ -1695,25 +1695,87 @@
     {
       "type": "Feature",
       "properties": {
-        "region": "Eastern Region",
-        "division": "North Division",
-        "base": "Biddle ANGB",
-        "location": "Horsham, PA",
-        "branch": "ANG",
-        "lat": "40.2",
-        "lon": "-75.1",
-        "president": "Rick Kocher",
-        "vp": "None",
-        "primary_email": "rick.kocher@gmail.com",
-        "secondary_email": "",
+        "region": "European Region",
+        "base": "Lakenheath AB",
+        "location": "United Kingdom",
+        "lat": "52.4",
+        "lon": "0.5",
+        "president": "Brennan Burke",
+        "vp": "Sable Darling",
+        "primary_email": "brennan.burke.1@us.af.mil",
+        "secondary_email": "sable.r.darling.mil@health.mil",
         "org_email": "",
         "website": "",
         "facebook": ""
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-75.1, 40.2]
+        "coordinates": [0.5, 52.2]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "European Region",
+        "base": "Mildenhall AB",
+        "location": "United Kingdom",
+        "lat": "52.3",
+        "lon": "0.5",
+        "president": "Lydia Gagern",
+        "vp": "Javon Gooseby",
+        "primary_email": "lydia.gagern.1@us.af.mil",
+        "secondary_email": "javon.gooseby.1@us.af.mil",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.5, 52.3]
+      }
+    }, 
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Eastern Region",
+        "division": "Central Division", 
+        "base": "Pentagon",
+        "location": "Virginia",
+        "lat": "38.5",
+        "lon": "77.03",
+        "president": "Jana Bushway",
+        "vp": "Marie Cor Cruz",
+        "primary_email": "jana.bushway@us.af.mil",
+        "secondary_email": "marie_cor.cruz.1@us.af.mil",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.03, 38.5]  
+      }
+    }, 
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Western Region",
+        "division": "Midwest Division", 
+        "base": "Air Force Academy",
+        "location": "Colorado",
+        "lat": "38.59",
+        "lon": "-104.5",
+        "president": "Casey Chase",
+        "vp": "Breigh Renner",
+        "primary_email": "casey.chase@afacademy.af.edu",
+        "secondary_email": "breigh.renner@afacademy.af.edu",
+        "org_email": "",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.5, 38.59]
     }
   ]
 }
