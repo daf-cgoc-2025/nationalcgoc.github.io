@@ -1650,24 +1650,23 @@
     {
       "type": "Feature",
       "properties": {
-        "region": "",
-        "division": "",
-        "base": "Air Force Recruiting Service",
-        "location": "San Antonio, TX",
+        "region": "European Region",
+        "base": "Incirlik AB",
+        "location": "Turkey",
         "branch": "",
-        "lat": "29.4",
-        "lon": "-98.5",
-        "president": "Jennifer DeVoe",
-        "vp": "None",
-        "primary_email": "jennifer.devoe@us.af.mil",
-        "secondary_email": "",
+        "lat": "36.9",
+        "lon": "35.4",
+        "president": "Sybil Acevedo",
+        "vp": "Zarquis Butler",
+        "primary_email": "sybil.acevedo@us.af.mil",
+        "secondary_email": "zarquis.butler@us.af.mil",
         "org_email": "",
         "website": "",
         "facebook": ""
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-98.5, 29.4]
+        "coordinates": [36.9, 35.4]
       }
     },
     {
