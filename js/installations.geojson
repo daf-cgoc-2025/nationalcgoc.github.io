@@ -1742,7 +1742,7 @@
         "base": "Pentagon",
         "location": "Virginia",
         "lat": "38.5",
-        "lon": "77.03",
+        "lon": "77.1",
         "president": "Jana Bushway",
         "vp": "Marie Cor Cruz",
         "primary_email": "jana.bushway@us.af.mil",
@@ -1753,7 +1753,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [77.03, 38.5]  
+        "coordinates": [77.1, 38.5]  
       }
     }, 
     {
@@ -1763,7 +1763,7 @@
         "division": "Midwest Division", 
         "base": "Air Force Academy",
         "location": "Colorado",
-        "lat": "38.59",
+        "lat": "38.5",
         "lon": "-104.5",
         "president": "Casey Chase",
         "vp": "Breigh Renner",
@@ -1775,8 +1775,10 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.5, 38.59]
+        "coordinates": [-104.5, 38.5]
       }
+     
+      },
     {
    }
 
