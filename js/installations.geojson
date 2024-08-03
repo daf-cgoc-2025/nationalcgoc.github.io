@@ -1654,8 +1654,8 @@
         "base": "Incirlik AB",
         "location": "Turkey",
         "branch": "",
-        "lat": "36.9",
-        "lon": "35.4",
+        "lat": "36.5",
+        "lon": "35.2",
         "president": "Sybil Acevedo",
         "vp": "Zarquis Butler",
         "primary_email": "sybil.acevedo@us.af.mil",
@@ -1666,7 +1666,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [36.9, 35.4]
+        "coordinates": [36.5, 35.2]
       }
     },
     {
