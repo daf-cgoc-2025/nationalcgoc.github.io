@@ -1742,7 +1742,7 @@
         "base": "Pentagon",
         "location": "Virginia",
         "lat": "38.87",
-        "lon": "77.2",
+        "lon": "-77.01",
         "president": "Jana Bushway",
         "vp": "Marie Cor Cruz",
         "primary_email": "jana.bushway@us.af.mil",
@@ -1753,7 +1753,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [77.2, 38.87]  
+        "coordinates": [-77.01, 38.87]  
       }
     }, 
     {
