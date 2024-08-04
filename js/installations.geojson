@@ -1761,7 +1761,7 @@
       "properties": {
         "region": "Western Region",
         "division": "Midwest Division", 
-        "base": "Air Force Academy",
+        "base": "United States Air Force Academy",
         "location": "Colorado",
         "lat": "38.5",
         "lon": "-104.5",
@@ -1778,9 +1778,9 @@
         "coordinates": [-104.5, 38.5]
       }
      
-      },
-    {
-   }
+    },
+  {
+}
 
     
 
