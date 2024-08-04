@@ -49,7 +49,7 @@
       "properties": {
         "region": "Western Region",
         "division": "Southwest Division",
-        "base": "Lackland AFB",
+        "base": "Joint Base San Antonio-Randolph",
         "location": "Bexar County, TX",
         "lat": "29.3",
         "lon": "-98.6",
@@ -104,26 +104,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [-97.2, 37.6]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "region": "Western Region",
-        "division": "Southwest Division",
-        "base": "Randolph AFB",
-        "location": "Universal City, TX",
-        "lat": "29.5",
-        "lon": "-98.2",
-        "president": "UNKNOWN",
-        "vp": "UNKNOWN",
-        "primary_email": "UNKNOWN",
-        "secondary_email": "UNKNOWN",
-        "org_email": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-98.2, 29.5]
       }
     },
     {
