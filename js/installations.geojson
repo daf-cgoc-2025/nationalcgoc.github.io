@@ -1741,8 +1741,8 @@
         "division": "Central Division", 
         "base": "Pentagon",
         "location": "Virginia",
-        "lat": "38.5",
-        "lon": "77.1",
+        "lat": "38.87",
+        "lon": "77.2",
         "president": "Jana Bushway",
         "vp": "Marie Cor Cruz",
         "primary_email": "jana.bushway@us.af.mil",
@@ -1753,7 +1753,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [77.1, 38.5]  
+        "coordinates": [77.2, 38.87]  
       }
     }, 
     {
