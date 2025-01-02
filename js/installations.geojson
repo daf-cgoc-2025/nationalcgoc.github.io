@@ -53,10 +53,10 @@
         "location": "Bexar County, TX",
         "lat": "29.3",
         "lon": "-98.6",
-        "president": "Brenna Cole",
-        "vp": "Jasmen Spand",
-        "primary_email": "brenna.cole.1@us.af.mil",
-        "secondary_email": "jasmen.spand.1@us.af.mil",
+        "president": "Duncan Hunter",
+        "vp": "Christopher Voltz",
+        "primary_email": "duncan.hunter.1@us.af.mil",
+        "secondary_email": "christopher.voltz.2@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -116,9 +116,9 @@
         "lat": "33.9",
         "lon": "-98.5",
         "president": "Michael Cherradi",
-        "vp": "Carlos Rivera",
+        "vp": "Brieshon Quarles",
         "primary_email": "michael.cherradi.1@us.af.mil",
-        "secondary_email": "carlos.rivera.40@us.af.mil",
+        "secondary_email": "brieshon.quarles.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -195,9 +195,9 @@
         "location": "Box Elder, SD",
         "lat": "44.1",
         "lon": "-103.1",
-        "president": "UNKNOWN",
+        "president": "Zachary Theriault",
         "vp": "UNKNOWN",
-        "primary_email": "UNKNOWN",
+        "primary_email": "zachary.theriault.1@us.af.mil ",
         "secondary_email": "UNKNOWN",
         "org_email": "None"
       },
@@ -215,10 +215,10 @@
         "location": "Cheyenne, WY",
         "lat": "41.1",
         "lon": "-104.8",
-        "president": "UNKNOWN",
-        "vp": "UNKNOWN",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "president": "Timothy Burd",
+        "vp": "Kayla Jencks",
+        "primary_email": "timothy.burd@us.af.mil",
+        "secondary_email": "kayla.jencks.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -256,9 +256,9 @@
         "lat": "47.5",
         "lon": "-111.1",
         "president": "Ryan Timms",
-        "vp": "Colin Hoveln",
+        "vp": "Mae Hickey",
         "primary_email": "ryan.timm@us.af.mil",
-        "secondary_email": "colin.hoveln.1@us.af.mil",
+        "secondary_email": "mae.hickey.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -295,10 +295,10 @@
         "location": "Bellevue, NE",
         "lat": "41.1",
         "lon": "-95.9",
-        "president": "Ross Reddington",
-        "vp": "Jess Cochis",
-        "primary_email": "ross.reddington.1@us.af.mil",
-        "secondary_email": "jessica.cochis.1@us.af.mil",
+        "president": "Natalie Wirth",
+        "vp": "Giovanni Pomales",
+        "primary_email": "natalie.wirth@us.af.mil",
+        "secondary_email": "giovani.pomales.1@us.af.mil",
         "org_email": "55wg.cg.cgoc@us.af.mil"
       },
       "geometry": {
@@ -335,10 +335,10 @@
         "location": "Clovis, NM",
         "lat": "34.3",
         "lon": "-103.3",
-        "president": "Caleb Smith",
-        "vp": "Gabrielle Cohn",
-        "primary_email": "caleb.smith.57@us.af.mil",
-        "secondary_email": "gabrielle.cohn.1@us.af.mil",
+        "president": "Stephen Jones",
+        "vp": "Nicholas Cervantes",
+        "primary_email": "stephen.jones.77@us.af.mil",
+        "secondary_email": "nicholas.cervantes.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -355,10 +355,10 @@
         "location": "Tucson, AZ",
         "lat": "32.1",
         "lon": "-110.8",
-        "president": "UNKNOWN",
-        "vp": "UNKNOWN",
-        "primary_email": "UNKNOWN",
-        "secondary_email": "UNKNOWN",
+        "president": "Piper Oliver ",
+        "vp": "Jean-Alix Jean Simmon",
+        "primary_email": "piper.oliver.1@us.af.mi",
+        "secondary_email": "jeanalix.jeansimon.mil@health.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -455,10 +455,10 @@
         "location": "Del Rio, TX",
         "lat": "29.3",
         "lon": "-100.7",
-        "president": "George Peng",
-        "vp": "Sarah Cap",
-        "primary_email": "george.peng2.mil@health.mil",
-        "secondary_email": "sarah.cap@us.af.mil",
+        "president": "Chanyoung Lee",
+        "vp": "Pranavi Sayyaparju",
+        "primary_email": "chanyoung.lee.1@us.af.mil",
+        "secondary_email": "pranavi.sayyaparaju.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -575,10 +575,10 @@
         "location": "Ogden, UT",
         "lat": "41.1",
         "lon": "-112",
-        "president": "Jordan Pierce",
-        "vp": "Eric Hunter",
-        "primary_email": "jordan.pierce.5@us.af.mil",
-        "secondary_email": "eric.hunter.3@us.af.mil",
+        "president": "Aleksander Towne",
+        "vp": "Andrew Peterson",
+        "primary_email": "aleksandr.towne.1@us.af.mil",
+        "secondary_email": "andrew.peterson.37@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -615,10 +615,10 @@
         "location": "Riverside, CA",
         "lat": "33.9",
         "lon": "-117.3",
-        "president": "UNKNOWN",
-        "vp": "UNKNOWN",
-        "primary_email": "UNKNOWN",
-        "secondary_email": "UNKNOWN",
+        "president": "Calvinpaul Stewart",
+        "vp": "Jared Nutt",
+        "primary_email": "calvinpaul.stewart@us.af.mil",
+        "secondary_email": "jared.nutt.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -631,14 +631,14 @@
       "properties": {
         "region": "Western Region",
         "division": "Pacific Division",
-        "base": "McChord AFB",
+        "base": "Joint Base Lewsi-McChord AFB",
         "location": "Tacoma, WA",
         "lat": "47.1",
         "lon": "-122.5",
-        "president": "UNKNOWN",
-        "vp": "UNKNOWN",
-        "primary_email": "UNKNOWN",
-        "secondary_email": "UNKNOWN",
+        "president": "Aaron Ault",
+        "vp": "Megan McChrystal",
+        "primary_email": "aaron.ault.1@us.af.mil",
+        "secondary_email": "megan.a.mcchrystal.mil@mail.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -735,10 +735,10 @@
         "location": "Dover, DE",
         "lat": "39.1",
         "lon": "-75.5",
-        "president": "Amy Steigerwald",
-        "vp": "Erin Johnson",
-        "primary_email": "amy.l.steigerwald.mil@health.mil",
-        "secondary_email": "erin.johnson.32@us.af.mil",
+        "president": "Michele Lee",
+        "vp": "Cody Kimbrell",
+        "primary_email": "michele.lee.2@us.af.mil",
+        "secondary_email": "benjamin.c.kimbrell.mil@health.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -756,9 +756,9 @@
         "lat": "42.5",
         "lon": "-71.3",
         "president": "Nancy Bahnasy",
-        "vp": "Caleb Holbrook",
+        "vp": "VACANT",
         "primary_email": "nancy.bahnasy.1@us.af.mil",
-        "secondary_email": "caleb.holbrook@us.af.mil",
+        "secondary_email": "None",
         "org_email": "None"
       },
       "geometry": {
@@ -775,10 +775,10 @@
         "location": "Trenton, NJ",
         "lat": "40",
         "lon": "-74.6",
-        "president": "Robert Kitson",
-        "vp": "Madelyn Torriano",
-        "primary_email": "robert.kitson@us.af.mil",
-        "secondary_email": "madelyn.toriano.1@us.af.mil",
+        "president": "Caitlin Rodriguez",
+        "vp": "VACANT",
+        "primary_email": "caitlin.rodriguez.1@us.af.mil",
+        "secondary_email": "None",
         "org_email": "None"
       },
       "geometry": {
@@ -795,10 +795,10 @@
         "location": "Dayton, OH",
         "lat": "39.8",
         "lon": "-84.1",
-        "president": "Cameron Rickle",
-        "vp": "Maria Cresci",
-        "primary_email": "cameron.rickle.1@us.af.mil",
-        "secondary_email": "maria.cresci.1@us.af.mil",
+        "president": "Maria Cresci",
+        "vp": "Sydney Taggart",
+        "primary_email": "maria.cresci.1@us.af.mil",
+        "secondary_email": "sydney.d.taggart.mil@health.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -837,9 +837,9 @@
         "lat": "35.4",
         "lon": "-86",
         "president": "Benjamin West",
-        "vp": "UNKNOWN",
+        "vp": "Patrick Robbins",
         "primary_email": "benjamin.west.14@us.af.mil",
-        "secondary_email": "None",
+        "secondary_email": "patrick.robbins.2@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -937,9 +937,9 @@
         "location": "Belleville, IL",
         "lat": "38.5",
         "lon": "-89.9",
-        "president": "Laney Rivera",
+        "president": "Abbey Damore",
         "vp": "Patrick Sauser",
-        "primary_email": "laney.rivera.1@us.af.mil",
+        "primary_email": "abbey.k.damore.mil@health.mil",
         "secondary_email": "patrick.sauser.1@us.af.mil",
         "org_email": "None"
       },
@@ -1220,9 +1220,9 @@
         "location": "Fort Meade, MD",
         "lat": "39.1",
         "lon": "-76.7",
-        "president": "Wade Reynolds",
+        "president": "Logan Shock",
         "vp": "Nelson Whitney",
-        "primary_email": "wade.reynolds.1@us.af.mil",
+        "primary_email": "logan.shock.1@us.af.mil",
         "secondary_email": "thomas.whitney.7@us.af.mil",
         "org_email": "None",
         "facebook": "None"
@@ -1240,11 +1240,11 @@
         "location": "Honolulu, HI",
         "lat": "21.3",
         "lon": "-157.9",
-        "president": "Erica Garcia",
-        "vp": "Michelle Carhwy-Tate",
-        "primary_email": "erica.garcia.8@us.af.mil",
-        "secondary_email": "michelle.catheytate@us.af.mil",
-        "org_email": "None",
+        "president": "Alysa Vinson",
+        "vp": "Quinn Perez",
+        "primary_email": "alysa.vinson.1@us.af.mil",
+        "secondary_email": "quinn.perez.3@us.af.mil",
+        "org_email": "hickam.cgoc@us.af.mil",
         "website": "https://hickam.eim.pacaf.af.mil/Hickam%20CGOC/default.aspx"
       },
       "geometry": {
@@ -1261,9 +1261,9 @@
         "lat": "13.6",
         "lon": "144.9",
         "president": "Samantha Dougherty",
-        "vp": "UNKNOWN",
+        "vp": "Chelsea Lewis",
         "primary_email": "samantha.dougherty.1@us.af.mil",
-        "secondary_email": "nahira.figueroa_otero.1@us.af.mil",
+        "secondary_email": "chelsea.l.lewis.mil@health.mil",
         "org_email": "36WG.Andersen.CGOC@us.af.mil",
         "website": "https://andersen.eis.pacaf.af.mil/CommunitySites/CGOC/_layouts/15/start.aspx#/SitePages/Community%20Home.aspx",
         "facebook": "https://hickam.eim.pacaf.af.mil/Hickam%20CGOC/default.aspx"
@@ -1282,9 +1282,9 @@
         "lat": "37.1",
         "lon": "127",
         "president": "William Cook",
-        "vp": "Jessica Cummings",
+        "vp": "VACANT",
         "primary_email": "william.cook.44@us.af.mil",
-        "secondary_email": "jessica.cummings.6@us.af.mil",
+        "secondary_email": "None",
         "org_email": "osancgoc@gmail.com",
         "website": "https://osan.eim.pacaf.af.mil/sites/CGOC/default.aspx"
       },
@@ -1302,9 +1302,9 @@
         "lat": "35.9",
         "lon": "126.6",
         "president": "Kaylin Hankerson",
-        "vp": "UNKNOWN",
+        "vp": "VACANT",
         "primary_email": "kaylin.hankerson.1@us.af.mil",
-        "secondary_email": "UNKNOWN",
+        "secondary_email": "None",
         "org_email": "8fw.cgoc@us.af.mil",
         "facebook": "www.facebook.com/KunsanCGOC"
       },
@@ -1321,10 +1321,10 @@
         "location": "Fairbanks, AK",
         "lat": "64.6",
         "lon": "-147.1",
-        "president": "Daniel Wernert",
-        "vp": "UNKNOWN",
-        "primary_email": "daniel.wernert@us.af.mil",
-        "secondary_email": "UNKNOWN",
+        "president": "Joseph Botcherby",
+        "vp": "Julieth Collazos",
+        "primary_email": "joseph.botcherby.1@us.af.mil",
+        "secondary_email": "julieth.collazos.1@us.af.mil",
         "org_email": "None",
         "facebook": "https://www.facebook.com/EielsonCGOC/"
       },
@@ -1337,14 +1337,14 @@
       "type": "Feature",
       "properties": {
         "region": "Pacific Region",
-        "base": "JB Elmendorf",
+        "base": "Joint Base Elmendorf-Rochardson",
         "location": "Anchorage, AK",
         "lat": "61.3",
         "lon": "-149.8",
         "president": "Dejaye Garner",
-        "vp": "Daniel Garner",
+        "vp": "Cheyenne, Mistry",
         "primary_email": "dejaye.garner@us.af.mil",
-        "secondary_email": "daniel.garner.1@us.af.mil",
+        "secondary_email": "cheyenne.j.mistry.mil@health.mil",
         "org_email": "None",
         "website": "https://portal.elmendorf.af.mil/units/AFLocal/Company%20Grade%20Officer%20Association/default.aspx",
         "facebook": "https://www.facebook.com/groups/175756949119492/#!/groups/175756949119492/"
@@ -1362,9 +1362,9 @@
         "location": "Misawa, Japan",
         "lat": "40.7",
         "lon": "141.4",
-        "president": "George Bermudez",
+        "president": "Khandase Tate_Nero",
         "vp": "Morgan Sackett",
-        "primary_email": "george.bermudez.3@us.af.mil",
+        "primary_email": "khandase.b.tatenero.mil@health.mil",
         "secondary_email": "morgan.sackett.1@us.af.mil",
         "org_email": "35fw.cgoc@us.af.mil",
         "facebook": "http://www.facebook.com/pages/Misawa-CGOC/221493584544547"
@@ -1402,9 +1402,9 @@
         "lat": "26.4",
         "lon": "127.8",
         "president": "Christine Burnham",
-        "vp": "Erica Chateau",
+        "vp": "Tiana Grow",
         "primary_email": "christine.burnham.1@us.af.mil",
-        "secondary_email": "erika.chateau@us.af.mil",
+        "secondary_email": "tiana.grow.1@us.af.mil",
         "org_email": "18wg.cgoc.kadena@us.af.mil",
         "website": "https://afkm.wpafb.af.mil/KadenaCGOC"
       },
@@ -1522,11 +1522,11 @@
         "branch": "USSF",
         "lat": "39.7",
         "lon": "-104.7",
-        "president": "UNKNOWN",
-        "vp": "UNKNOWN",
-        "primary_email": "UNKNOWN",
-        "secondary_email": "UNKNOWN",
-        "org_email": "",
+        "president": "Teiona Fuson",
+        "vp": "Clarence Robertson",
+        "primary_email": "teiona.fuson.1@spaceforce.mil",
+        "secondary_email": "clarence.robertson.1@spaceforce.mil",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1549,7 +1549,7 @@
         "vp": "Susana Montano",
         "primary_email": "lesean.brown.1@spaceforce.com",
         "secondary_email": "susana.montano.mil@mail.mil",
-        "org_email": "",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1568,11 +1568,11 @@
         "branch": "NY ANG",
         "lat": "43.2",
         "lon": "-75.5",
-        "president": "Justin Bush",
-        "vp": "Ray Shively",
-        "primary_email": "justin.bush.1@us.af.mil",
-        "secondary_email": "ray.shively@us.af.mil",
-        "org_email": "",
+        "president": "Ray Shively",
+        "vp": "VACANT",
+        "primary_email": "ray.shively@us.af.mil",
+        "secondary_email": "VACANT",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1595,7 +1595,7 @@
         "vp": "VACANT",
         "primary_email": "mike3478@gmail.com",
         "secondary_email": "",
-        "org_email": "",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1615,10 +1615,10 @@
         "lat": "32.4",
         "lon": "-86.4",
         "president": "Kaitlynn Williams",
-        "vp": "UNKNOWN",
+        "vp": "Michael Sim",
         "primary_email": "kaitlynn.williams.2@us.af.mil",
-        "secondary_email": "UNKNOWN",
-        "org_email": "",
+        "secondary_email": "Michael.Sim@csusb.edu",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1633,14 +1633,13 @@
         "region": "European Region",
         "base": "Incirlik AB",
         "location": "Turkey",
-        "branch": "",
         "lat": "36.5",
         "lon": "35.2",
-        "president": "Sybil Acevedo",
-        "vp": "Zarquis Butler",
-        "primary_email": "sybil.acevedo@us.af.mil",
-        "secondary_email": "zarquis.butler@us.af.mil",
-        "org_email": "",
+        "president": "Lawrence Hinson",
+        "vp": "Robert Acevedo",
+        "primary_email": "lawrence.hinson.1@us.af.mil ",
+        "secondary_email": "robert.acevedo.1@us.af.mil ",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1663,7 +1662,7 @@
         "vp": "None",
         "primary_email": "kenneth.parrish.2@us.af.mil",
         "secondary_email": "",
-        "org_email": "",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1684,7 +1683,7 @@
         "vp": "Sable Darling",
         "primary_email": "brennan.burke.1@us.af.mil",
         "secondary_email": "sable.r.darling.mil@health.mil",
-        "org_email": "",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1705,7 +1704,7 @@
         "vp": "Javon Gooseby",
         "primary_email": "lydia.gagern.1@us.af.mil",
         "secondary_email": "javon.gooseby.1@us.af.mil",
-        "org_email": "",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1727,7 +1726,7 @@
         "vp": "Marie Cor Cruz",
         "primary_email": "jana.bushway@us.af.mil",
         "secondary_email": "marie_cor.cruz.1@us.af.mil",
-        "org_email": "",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1749,7 +1748,7 @@
         "vp": "Susana Montano",
         "primary_email": "lesean.brown.1@spaceforce.com",
         "secondary_email": "susana.montano.mil@mail.mil",
-        "org_email": "",
+        "org_email": "None",
         "website": "",
         "facebook": ""
       },
@@ -1757,6 +1756,117 @@
         "type": "Point",
         "coordinates": [-104.5, 38.5]
       }
-     }
+     },
+     {
+      "type": "Feature",
+      "properties": {
+        "region": "Eastern Region",
+        "division": "Central Division",
+        "base": "Maryland ANG / Martin State Airport",
+        "location": "Middle River, MD",
+        "branch": "MD ANG",
+        "lat": "39.3",
+        "lon": "-76.4",
+        "president": "Bryce Carroll",
+        "vp": "Neel Sharma",
+        "primary_email": "bryce.carroll.2@us.af.mil",
+        "secondary_email": "neel.sharma@us.af.mil",
+        "org_email": "None",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.4, 39.3]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Eastern Region",
+        "division": "Central Division",
+        "base": "174th AW",
+        "location": "Syracuse, NY",
+        "branch": "NY ANG",
+        "lat": "43.0",
+        "lon": "-76.1",
+        "president": "Jeremy Vitale",
+        "vp": "Elise Permann",
+        "primary_email": "jeremy@jeremyvitale.com",
+        "secondary_email": "elise.permann@us.af.mil",
+        "org_email": "None",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.1, 43.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "European Region",
+        "base": "Lajes Field",
+        "location": "Lajes",
+        "lat": "38.7",
+        "lon": "-27.2",
+        "president": "Destiny Cepero",
+        "vp": "Grace Wood",
+        "primary_email": "destiny.cepero.1@us.af.mil ",
+        "secondary_email": "grace.wood@us.af.mil ",
+        "org_email": "None",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-27.2, 38.7]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "European Region",
+        "base": "Pituffik SB",
+        "location": "Greenland",
+        "lat": "76.5",
+        "lon": "-68.6",
+        "president": "Cory Nelson",
+        "vp": "VACANT",
+        "primary_email": "cory.nelson.6@spaceforce.mil",
+        "secondary_email": "None",
+        "org_email": "None",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.6, 76.5]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "region": "Western Region",
+        "division": "Central Division",
+        "base": "Portland ANG",
+        "location": "Portland, OR",
+        "branch": "OR ANG",
+        "lat": "45.5",
+        "lon": "-122.5",
+        "president": "Dewayne Pittman",
+        "vp": "Samantha Palacios",
+        "primary_email": "dewayne.pittman.1@us.af.mil",
+        "secondary_email": "samantha.palacios@us.af.mil",
+        "org_email": "None",
+        "website": "",
+        "facebook": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.5, 45.5]
+      }
+    }
   ]  
 }
