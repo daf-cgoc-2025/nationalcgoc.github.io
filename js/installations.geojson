@@ -196,9 +196,9 @@
         "lat": "44.1",
         "lon": "-103.1",
         "president": "Zachary Theriault",
-        "vp": "UNKNOWN",
+        "vp": "VACANT",
         "primary_email": "zachary.theriault.1@us.af.mil ",
-        "secondary_email": "UNKNOWN",
+        "secondary_email": "None",
         "org_email": "None"
       },
       "geometry": {
@@ -396,9 +396,9 @@
         "lat": "31.4",
         "lon": "-100.4",
         "president": "Andrew Burrola",
-        "vp": "UNKNOWN",
+        "vp": "VACANT",
         "primary_email": "andrew.burrola.1@us.af.mil",
-        "secondary_email": "UNKNOWN",
+        "secondary_email": "None",
         "org_email": "None"
       },
       "geometry": {
@@ -516,9 +516,9 @@
         "lat": "36.5",
         "lon": "-115.6",
         "president": "Beu Dicken",
-        "vp": "UNKNOWN",
+        "vp": "VACANT",
         "primary_email": "beau.dicken@us.af.mil",
-        "secondary_email": "UNKNOWN",
+        "secondary_email": "None",
         "org_email": "None"
       },
       "geometry": {
