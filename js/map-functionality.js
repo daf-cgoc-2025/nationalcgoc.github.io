@@ -114,7 +114,7 @@ function popUp(feature, layer) {
   }
 
   // create tooltip content
-  if (liason.length = 0) {
+  if (liason.length < 5) {
     var popupContent = 
     '<b>' + feature.properties.base + '</b>' + '<br>' + 
     feature.properties.location + '<br>' +
