@@ -104,8 +104,18 @@ function popUp(feature, layer) {
     instagramStr = '<a href="' + feature.properties.instagram + '" target="_blank">Visit their Instagram</a>';
   }
 
+    // validate region
+  var region = "";
+
+  if (!feature.properties.liason) {
+      liason = ""; 
+  } else {
+    liason = feature.properties.liason;
+  }
+
   // create tooltip content
-  var popupContent = 
+  if (liason.length = 0) {
+    var popupContent = 
     '<b>' + feature.properties.base + '</b>' + '<br>' + 
     feature.properties.location + '<br>' +
     region + division + branch +'<br>' +
@@ -117,7 +127,24 @@ function popUp(feature, layer) {
     websiteStr + 
     facebookStr +
     instagramStr;
-  layer.bindPopup(popupContent);
+    layer.bindPopup(popupContent);
+  } else {
+    var popupContent = 
+    '<b>' + feature.properties.base + '</b>' + '<br>' + 
+    feature.properties.location + '<br>' +
+    region + division + branch +'<br>' +
+    '<br>' +
+    'Liason: ' + feature.properties.liason + '<br>' +
+    'President: ' + feature.properties.president + '<br>' +
+    'Vice President: ' + feature.properties.vp + '<br>' +
+    '<br>' +
+    emailStr +
+    websiteStr + 
+    facebookStr +
+    instagramStr;
+    layer.bindPopup(popupContent);
+  }
+  
 }
 
 geojsonLayer.addTo(map);
