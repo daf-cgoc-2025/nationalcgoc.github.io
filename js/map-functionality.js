@@ -105,7 +105,7 @@ function popUp(feature, layer) {
   }
 
     // validate region
-  var region = "";
+  var liason = "";
 
   if (!feature.properties.liason) {
       liason = ""; 
