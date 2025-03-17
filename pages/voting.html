@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photo Voting</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .photo-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+      .photo-card:hover {
+        transform: scale(1.02);
+      }
+      .photo-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+      .vote-button {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 16px;
+        margin-top: 12px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .vote-button:hover {
+        background: #0056b3;
+      }
+      .vote-count {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vote for Your Favorite Photo</h1>
+    <div class="grid" id="photo-grid"></div>
+
+    <script type="module">
+      // Import the required Firebase modules from v11.4.0
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+      import {
+        getFirestore,
+        doc,
+        setDoc,
+        onSnapshot,
+        updateDoc,
+        increment,
+        enableIndexedDbPersistence,
+      } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+
+      // Your web app's Firebase configuration – update with your actual config if needed
+      const firebaseConfig = {
+        apiKey: "AIzaSyC5NpWuDlAEr_UL-YduEP_eB22NTiaaoN8",
+        authDomain: "daf-cgoc.firebaseapp.com",
+        projectId: "daf-cgoc",
+        storageBucket: "daf-cgoc.firebasestorage.app",
+        messagingSenderId: "1087927875615",
+        appId: "1:1087927875615:web:bba3ec0da510726a1cbd2a",
+        measurementId: "G-TNPC9ZK7L7",
+      };
+
+      // Initialize Firebase, Analytics, and Firestore
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getFirestore(app);
+
+      // Enable offline persistence (ensuring votes persist even if connection is lost)
+      enableIndexedDbPersistence(db).catch((err) => {
+        console.error("Firestore persistence error:", err);
+      });
+
+      // Define your photos with the image id you want to use as the document ID
+      const photos = [
+        {
+          id: "image1",
+          imageUrl: "https://via.placeholder.com/300?text=Photo+1",
+        },
+        {
+          id: "image2",
+          imageUrl: "https://via.placeholder.com/300?text=Photo+2",
+        },
+        {
+          id: "image3",
+          imageUrl: "https://via.placeholder.com/300?text=Photo+3",
+        },
+        {
+          id: "image4",
+          imageUrl: "https://via.placeholder.com/300?text=Photo+4",
+        },
+      ];
+
+      const photoGrid = document.getElementById("photo-grid");
+
+      // Loop through each photo to create a card and set up Firestore document for vote tracking
+      photos.forEach((photo) => {
+        // Create the photo card element
+        const card = document.createElement("div");
+        card.className = "photo-card";
+        card.id = "card-" + photo.id;
+        card.innerHTML = `
+        <img src="${photo.imageUrl}" alt="${photo.id}">
+        <button class="vote-button" onclick="vote('${photo.id}')">Vote</button>
+        <div class="vote-count" id="vote-count-${photo.id}">0</div>
+      `;
+        photoGrid.appendChild(card);
+
+        // Initialize the Firestore document keyed by the image id
+        const photoDocRef = doc(db, "photos", photo.id);
+        // The "setDoc" with merge ensures that any pre-existing vote count is not overwritten
+        setDoc(
+          photoDocRef,
+          { votes: 0, imageUrl: photo.imageUrl },
+          { merge: true }
+        );
+
+        // Listen for real‑time updates to the vote count stored in Firestore
+        onSnapshot(photoDocRef, (docSnap) => {
+          if (docSnap.exists()) {
+            const data = docSnap.data();
+            document.getElementById("vote-count-" + photo.id).innerText =
+              data.votes || 0;
+          }
+        });
+      });
+
+      // Global vote function: increments the vote count in Firestore
+      window.vote = async function (imageId) {
+        const photoDocRef = doc(db, "photos", imageId);
+        try {
+          await updateDoc(photoDocRef, {
+            votes: increment(1),
+          });
+        } catch (error) {
+          console.error("Error updating vote for " + imageId + ":", error);
+        }
+      };
+    </script>
+  </body>
+</html>
