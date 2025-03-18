@@ -25,8 +25,8 @@ YouTube (How to connect Git page to Google Domains):
 
 
 *** EMAIL FORWARDING NOTES ***
-	- Emails sit in the the @afcgoc.org domain
-	- Emails can be received from domain email address but they can't be replied with the @afcgoc.org domain
+	- Emails sit in the the @dafcgoc.org domain
+	- Emails can be received from domain email address but they can't be replied with the @dafcgoc.org domain
 
 
 
