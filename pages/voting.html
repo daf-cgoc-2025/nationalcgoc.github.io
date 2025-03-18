@@ -14,70 +14,55 @@
       gtag('config', 'G-9MLXG6SFE1');
   </script>
   
+  <!-- Basic Page Needs
+  ================================================== -->
   <meta charset="utf-8">
   <title>Vote for Your Favorite Photo - DAFCGOC</title>
   <meta name="description" content="Vote for your favorite photo to feature on the front page of DAFCGOC.">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- CSS -->
+  <!-- CSS
+  ================================================== -->
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/vendor.min.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
   
-  <!-- Modernizr -->
+  <!-- Script
+  ================================================== -->
   <script src="../js/modernizr.js"></script>
+
+  <!-- Favicons
+  ================================================== -->
   <link rel="shortcut icon" href="../favicon.png">
   
   <style>
-    /* Outer grid container */
-    #photo-grid {
-      max-width: 900px;            /* restrict total width so we get at most 3 columns at large sizes */
-      margin: 0 auto;             /* center the entire grid container */
-      padding: 20px 0;
-      display: grid;
-      /* 
-         "auto-fit" or "auto-fill" can be used. 
-         With 280px min, you'll get up to 3 columns (because 3×280=840 + gap fits under 900). 
-      */
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      justify-content: center;     /* center columns if there's extra space */
+    /* Optional custom styling for the voting grid items */
+    .folio-item {
+      margin-bottom: 30px; /* spacing under each grid item */
     }
-
-    /* Each grid item */
-    .bgrid.folio-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;         /* center content within each item */
-      max-width: 320px;           /* optional cap so items don't stretch too large */
-      width: 100%;
-    }
-
-    /* Enforce a consistent aspect ratio for each image box */
     .item-wrap {
-      width: 100%;
-      aspect-ratio: 3 / 4;        /* adjust as desired (e.g., 4/3, 1/1, etc.) */
-      background-color: #222;      /* letterbox/pad color if image ratio doesn't match */
       border-radius: 4px;
       overflow: hidden;
-      margin-bottom: 10px;
+      background-color: #222; /* letterbox color if aspect ratio doesn't match */
       display: flex;
       align-items: center;
       justify-content: center;
+      aspect-ratio: 3 / 4;    /* fix aspect ratio, adjust as needed (3:4, 4:3, 1:1, etc.) */
     }
-
-    /* Display entire image, letterboxed if needed */
     .item-wrap img {
       width: 100%;
       height: 100%;
-      object-fit: contain; 
+      object-fit: contain; /* preserves full image without cropping */
     }
-
-    /* Container for vote button & count */
     .vote-container {
       text-align: center;
+      margin-top: 10px;
     }
     .vote-button {
       background: #007bff;
@@ -93,14 +78,16 @@
       background: #0056b3;
     }
     .vote-count {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
     }
   </style>
 </head>
 
 <body>
-  <!-- Header -->
+
+  <!-- Header
+  ================================================== -->
   <header id="main-header">
     <div class="row">
       <div class="logo">
@@ -117,28 +104,41 @@
           <li><a href="award-winners.html">Award Winners</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        </ul> <!-- end #nav -->
+      </nav> <!-- end #nav-wrap -->
+    </div> <!-- end row -->
+  </header> <!-- end header -->
 
-  <!-- Main Content: Voting Section -->
+  <!-- Main Voting Section
+  ================================================== -->
   <section id="portfolio">
     <div class="row section-head">
       <div class="twelve columns">
-        <h1>Vote for Your Favorite Photo</h1>
+        <h1>Vote for Your Favorite Photo<span>.</span></h1>
         <hr />
-        <p>Select the photo you want on our front page. Your vote is stored persistently via Cloud Firestore and updates in real time.</p>
+        <p>
+          Select the photo you want on our front page. Your vote is stored persistently via Cloud Firestore 
+          and updates in real time.
+        </p>
       </div>
     </div>
-    
-    <!-- Photo grid container -->
-    <div class="row items" id="photo-grid">
-      <!-- Voting items are generated dynamically via JavaScript -->
-    </div>
-  </section>
 
-  <!-- Footer -->
+    <!-- Using a "portfolio-wrapper" style grid to mimic the about/portfolio style -->
+    <div class="row items">
+      <!-- 
+        bgrid-third => 3 columns on large screens
+        s-bgrid-half => 2 columns on slightly smaller screens
+        tab-bgrid-half => 2 columns on tablet
+      -->
+      <div id="portfolio-wrapper" class="bgrid-third s-bgrid-half tab-bgrid-half group">
+        <!-- Our dynamic voting items will be injected here -->
+        <div id="photo-grid"></div>
+      </div>
+    </div> <!-- end .row.items -->
+  </section> <!-- end portfolio section -->
+
+  <!-- Footer
+  ================================================== -->
   <footer>
     <div class="row">
       <div class="twelve columns content group">
@@ -153,21 +153,25 @@
         <ul class="copyright">
           <li>&copy; 2023 The Dept. of the Air Force Company Grade Officers' Council</li>
           <li class="disclaimer">
-            The views expressed on this website and its associated media are those of the collective and individual volunteers and do not reflect the official policy or position of the United States Air Force, United States Space Force, Department of Defense, or government.
+            The views expressed on this website and its associated media are those of the collective 
+            and individual volunteers and do not reflect the official policy or position of the United 
+            States Air Force, United States Space Force, Department of Defense, or government.
           </li>
         </ul>
-      </div>
-    </div>
-  </footer>
+      </div> <!-- end .twelve.columns -->
+    </div> <!-- end .row -->
+  </footer> <!-- end footer -->
 
-  <!-- JS Files (from your theme) -->
+  <!-- JS Files (from your theme)
+  ================================================== -->
   <script src="../js/jquery-1.11.3.min.js"></script>
   <script src="../js/jquery-migrate-1.2.1.min.js"></script>
   <script src="../js/jquery.fittext.js"></script>
   <script src="../js/jquery.magnific-popup.min.js"></script>
   <script src="../js/main.js"></script>
 
-  <!-- Firebase Voting Script -->
+  <!-- Firebase Voting Script
+  ================================================== -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
@@ -182,7 +186,7 @@
       enableIndexedDbPersistence 
     } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
-    // Firebase configuration
+    // Your Firebase configuration
     const firebaseConfig = {
       apiKey: "YOUR_API_KEY",
       authDomain: "daf-cgoc.firebaseapp.com",
@@ -203,33 +207,31 @@
       console.error("Firestore persistence error:", err);
     });
 
-    // Define your photos (set your image IDs and URLs as needed)
+    // Define your photos (adjust IDs/URLs as needed)
     const photos = [
       { id: 'test1', imageUrl: '../images/team/1LT Bri Johndrow-DS.jpg' },
-      { id: 'test2', imageUrl: '../images/team/1LT Carlos Rivera-Comm RD.jpg' },
-      { id: 'test3', imageUrl: '../images/team/1LT Bri Johndrow-DS.jpg' },
-      { id: 'test4', imageUrl: '../images/team/1LT Carlos Rivera-Comm RD.jpg' }
+      { id: 'test2', imageUrl: '../images/team/1LT Carlos Rivera-Comm RD.jpg' }
     ];
 
     const photoGrid = document.getElementById('photo-grid');
 
-    // Dynamically create each photo voting item
+    // Create each voting item
     photos.forEach(async (photo) => {
-      // Create portfolio item container
+      // Outer container for each item
       const itemDiv = document.createElement('div');
       itemDiv.className = 'bgrid folio-item';
-      
-      // The .item-wrap enforces a uniform aspect ratio
+
+      // .item-wrap for the image
       const wrapDiv = document.createElement('div');
       wrapDiv.className = 'item-wrap';
 
-      // Create image element
+      // The image element
       const imgElem = document.createElement('img');
       imgElem.src = photo.imageUrl;
       imgElem.alt = photo.id;
       wrapDiv.appendChild(imgElem);
 
-      // Create container for vote button and vote count
+      // Vote container
       const voteContainer = document.createElement('div');
       voteContainer.className = 'vote-container';
 
@@ -246,23 +248,22 @@
       voteCountDiv.id = 'vote-count-' + photo.id;
       voteCountDiv.textContent = '0';
 
+      // Combine them
       voteContainer.appendChild(voteBtn);
       voteContainer.appendChild(voteCountDiv);
-
-      // Append everything
       itemDiv.appendChild(wrapDiv);
       itemDiv.appendChild(voteContainer);
       photoGrid.appendChild(itemDiv);
 
-      // Reference the document in Firestore
+      // Firestore doc reference
       const photoDocRef = doc(db, 'photos', photo.id);
-      // Check if the document exists; if not, set it with a default vote count
+      // Check if doc exists; if not, initialize it
       const docSnap = await getDoc(photoDocRef);
       if (!docSnap.exists()) {
         setDoc(photoDocRef, { votes: 0, imageUrl: photo.imageUrl });
       }
 
-      // Listen for real-time updates on the vote count
+      // Real-time listener for vote updates
       onSnapshot(photoDocRef, (snapshot) => {
         if (snapshot.exists()) {
           const data = snapshot.data();
@@ -271,7 +272,7 @@
       });
     });
 
-    // Global vote function: increments vote count in Firestore
+    // Increment the vote in Firestore
     window.vote = async function(imageId) {
       const photoDocRef = doc(db, 'photos', imageId);
       try {
