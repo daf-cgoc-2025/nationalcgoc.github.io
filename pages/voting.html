@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MLXG6SFE1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-9MLXG6SFE1');
+  </script>
+  
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Vote for Your Favorite Photo - DAFCGOC</title>
+  <meta name="description" content="Vote for your favorite photo to feature on the front page of DAFCGOC.">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/vendor.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+  
+  <!-- Script
+  ================================================== -->
+  <script src="../js/modernizr.js"></script>
+
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="../favicon.png">
+  
+  <style>
+    /* Optional custom styling for the voting grid items */
+    .folio-item {
+      margin-bottom: 30px; /* spacing under each grid item */
+    }
+    .item-wrap {
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: #222; /* letterbox color if aspect ratio doesn't match */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1 / 1;    /* fix aspect ratio, adjust as needed (3:4, 4:3, 1:1, etc.) */
+    }
+    .item-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* preserves full image without cropping */
+    }
+    .vote-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .vote-button {
+      background: #007bff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+    .vote-button:hover {
+      background: #0056b3;
+    }
+    .vote-count {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header
+  ================================================== -->
+  <header id="main-header">
+    <div class="row">
+      <div class="logo">
+        <a href="../index.html">Home - DAFCGOC</a>
+      </div>
+      <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation"><span class="menu-icon">Menu</span></a>
+        <a class="mobile-btn" href="#" title="Hide navigation"><span class="menu-icon">Menu</span></a>
+        <ul id="nav" class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="councils.html">Councils</a></li>
+          <li><a href="award-winners.html">Award Winners</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul> <!-- end #nav -->
+      </nav> <!-- end #nav-wrap -->
+    </div> <!-- end row -->
+  </header> <!-- end header -->
+
+  <!-- Main Voting Section
+  ================================================== -->
+  <section id="portfolio">
+    <div class="row section-head">
+      <div class="twelve columns">
+        <h1>Vote for Your Favorite Photo<span>.</span></h1>
+        <hr />
+        <p>
+          Vote for the photo(s) that best represent the DAF CGOC. The top 12 will be selected to go on to the front page of the site at the end of the voting period.
+        </p>
+      </div>
+    </div>
+
+    <!-- Using a "portfolio-wrapper" style grid to mimic the about/portfolio style -->
+    <div class="row items">
+      <!-- 
+        bgrid-third => 3 columns on large screens
+        s-bgrid-half => 2 columns on slightly smaller screens
+        tab-bgrid-half => 2 columns on tablet
+      -->
+      <div id="portfolio-wrapper" class="bgrid-third s-bgrid-half tab-bgrid-half group">
+        <!-- Our dynamic voting items will be injected here -->
+        <div id="photo-grid"></div>
+      </div>
+    </div> <!-- end .row.items -->
+  </section> <!-- end portfolio section -->
+
+  <!-- Footer
+  ================================================== -->
+  <footer>
+    <div class="row">
+      <div class="twelve columns content group">
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/DAFCGOC" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://www.instagram.com/dafcgoc/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+          <li><a href="https://www.youtube.com/@dafcgoc" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/dafcgoc" target="_blank"><i class="fab fa-linkedin-square"></i></a></li>
+          <li><a href="mailto:contact@afcgoc.org"><i class="fa fa-envelope-square"></i></a></li>
+        </ul>
+        <hr />
+        <ul class="copyright">
+          <li>&copy; 2023 The Dept. of the Air Force Company Grade Officers' Council</li>
+          <li class="disclaimer">
+            The views expressed on this website and its associated media are those of the collective 
+            and individual volunteers and do not reflect the official policy or position of the United 
+            States Air Force, United States Space Force, Department of Defense, or government.
+          </li>
+        </ul>
+      </div> <!-- end .twelve.columns -->
+    </div> <!-- end .row -->
+  </footer> <!-- end footer -->
+
+  <!-- JS Files (from your theme)
+  ================================================== -->
+  <script src="../js/jquery-1.11.3.min.js"></script>
+  <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="../js/jquery.fittext.js"></script>
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <script src="../js/main.js"></script>
+
+  <!-- Firebase Voting Script
+  ================================================== -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+    import { 
+      getFirestore, 
+      doc, 
+      getDoc,
+      setDoc, 
+      onSnapshot, 
+      updateDoc, 
+      increment, 
+      enableIndexedDbPersistence 
+    } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+
+    // Your Firebase configuration
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "daf-cgoc.firebaseapp.com",
+      projectId: "daf-cgoc",
+      storageBucket: "daf-cgoc.firebasestorage.app",
+      messagingSenderId: "1087927875615",
+      appId: "1:1087927875615:web:575dfba12b62beef1cbd2a",
+      measurementId: "G-4M7J7DZV6Y"
+    };
+
+    // Initialize Firebase
+    const appFirebase = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(appFirebase);
+    const db = getFirestore(appFirebase);
+
+    // Enable offline persistence
+    enableIndexedDbPersistence(db).catch((err) => {
+      console.error("Firestore persistence error:", err);
+    });
+
+    // Define your photos (adjust IDs/URLs as needed)
+    const photos = [
+      { id: 'vote1', imageUrl: '../images/voting/BBQ.jpg' },
+      { id: 'vote2', imageUrl: '../images/voting/womens officer q&a.jpg' },
+      { id: 'vote3', imageUrl: '../images/voting/community service.jpg' },
+      { id: 'vote4', imageUrl: '../images/voting/Daytona Event.jpg' },
+      { id: 'vote5', imageUrl: '../images/voting/F-35 group photo.JPG' },
+      { id: 'vote6', imageUrl: '../images/voting/fancy.JPG' },
+      { id: 'vote7', imageUrl: '../images/voting/fgo cgo speed mentor.jpg' },
+      { id: 'vote8', imageUrl: '../images/voting/Group photo.JPG' },
+      { id: 'vote9', imageUrl: '../images/voting/History Class-panama city.jpg' },
+      { id: 'vote10', imageUrl: '../images/voting/In a ship.JPG' },
+      { id: 'vote11', imageUrl: '../images/voting/JBER CGOC.jpg' },
+      { id: 'vote12', imageUrl: '../images/voting/lenderman pd.jpg' },
+      { id: 'vote13', imageUrl: '../images/voting/Lenderman Thank you.jpg' },
+      { id: 'vote14', imageUrl: '../images/voting/On a ship.JPG' },
+      { id: 'vote15', imageUrl: '../images/voting/Q&A.jpg' },
+      { id: 'vote16', imageUrl: '../images/voting/Col garcias PD.jpg' }
+    ];
+
+    const photoGrid = document.getElementById('photo-grid');
+
+    // Create each voting item
+    photos.forEach(async (photo) => {
+      // Outer container for each item
+      const itemDiv = document.createElement('div');
+      itemDiv.className = 'bgrid folio-item';
+
+      // .item-wrap for the image
+      const wrapDiv = document.createElement('div');
+      wrapDiv.className = 'item-wrap';
+
+      // The image element
+      const imgElem = document.createElement('img');
+      imgElem.src = photo.imageUrl;
+      imgElem.alt = photo.id;
+      wrapDiv.appendChild(imgElem);
+
+      // Vote container
+      const voteContainer = document.createElement('div');
+      voteContainer.className = 'vote-container';
+
+      const voteBtn = document.createElement('button');
+      voteBtn.className = 'vote-button';
+      voteBtn.textContent = 'Vote';
+      voteBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        vote(photo.id);
+      });
+
+      const voteCountDiv = document.createElement('div');
+      voteCountDiv.className = 'vote-count';
+      voteCountDiv.id = 'vote-count-' + photo.id;
+      voteCountDiv.textContent = '0';
+
+      // Combine them
+      voteContainer.appendChild(voteBtn);
+      voteContainer.appendChild(voteCountDiv);
+      itemDiv.appendChild(wrapDiv);
+      itemDiv.appendChild(voteContainer);
+      photoGrid.appendChild(itemDiv);
+
+      // Firestore doc reference
+      const photoDocRef = doc(db, 'photos', photo.id);
+      // Check if doc exists; if not, initialize it
+      const docSnap = await getDoc(photoDocRef);
+      if (!docSnap.exists()) {
+        setDoc(photoDocRef, { votes: 0, imageUrl: photo.imageUrl });
+      }
+
+      // Real-time listener for vote updates
+      onSnapshot(photoDocRef, (snapshot) => {
+        if (snapshot.exists()) {
+          const data = snapshot.data();
+          document.getElementById('vote-count-' + photo.id).textContent = data.votes || 0;
+        }
+      });
+    });
+
+    // Increment the vote in Firestore
+    window.vote = async function(imageId) {
+      const photoDocRef = doc(db, 'photos', imageId);
+      try {
+        await updateDoc(photoDocRef, { votes: increment(1) });
+      } catch (error) {
+        console.error("Error updating vote for " + imageId + ":", error);
+      }
+    }
+  </script>
+</body>
+</html>
