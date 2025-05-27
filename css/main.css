@@ -817,6 +817,21 @@ ul#nav li.current a:after {
 	top: 7px;
 }
 
+/* Add section to shrink left & right margins when the screen gets lower than 890 [with the added navigation items the navigation bar begins to create 2 lines] */
+@media only screen and (max-width: 1205px) {
+	ul#nav li a {
+		padding: 4px 4px;
+	}
+}
+
+@media only screen and (max-width: 906px) {
+	ul#nav li a {
+		padding: 4px 4px;
+		font-size:x-small;
+	}
+}
+
+
 /* mobile navigation 
 --------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
@@ -962,7 +977,7 @@ ul#nav li.current a:after {
 
 /* make sure the menu is visible on larger screens
 --------------------------------------------------------------------- */
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:768px) {
 	#nav-wrap ul#nav {
 		display: block !important;
 	}
