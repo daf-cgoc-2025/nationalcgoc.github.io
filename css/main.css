@@ -818,16 +818,30 @@ ul#nav li.current a:after {
 }
 
 /* Add section to shrink left & right margins when the screen gets lower than 890 [with the added navigation items the navigation bar begins to create 2 lines] */
-@media only screen and (max-width: 1205px) {
+@media only screen and (max-width: 1226px) {
 	ul#nav li a {
-		padding: 4px 4px;
+		padding: 14px .7vw ;
+		font-size: 1vw;
+		white-space: nowrap;
 	}
 }
 
-@media only screen and (max-width: 906px) {
+/* @media only screen and (max-width: 1074px) {
 	ul#nav li a {
-		padding: 4px 4px;
-		font-size:x-small;
+		padding: 4vw 4px;
+		font-size: 1vw;
+	}
+} */
+
+@media only screen and (max-width: 964px) {
+	ul#nav li a {
+		padding: 14px .2vw ;
+		font-size: 1vw;
+		white-space: nowrap;
+	}
+
+	.logo {
+		margin-right: 10px;
 	}
 }
 
