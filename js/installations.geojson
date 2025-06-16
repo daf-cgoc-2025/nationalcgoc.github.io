@@ -135,10 +135,10 @@
         "location": "Oklahoma City, OK",
         "lat": "35.4",
         "lon": "-97.4",
-        "president": "Evan Monteith",
-        "vp": "MiaLisa Mossay",
-        "primary_email": "evan.monteith.1@us.af.mil",
-        "secondary_email": "mialisa.g.mossay.mil@health.mil",
+        "president": "Micah Baughman",
+        "vp": "Amy Leclair",
+        "primary_email": "micah.baughman.1@us.af.mil",
+        "secondary_email": "amy.leclair.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -771,14 +771,14 @@
       "properties": {
         "region": "Eastern Region",
         "division": "North Division",
-        "base": "McGuire AFB",
+        "base": "Joint Base McGuire-Dix-Lakehurst",
         "location": "Trenton, NJ",
         "lat": "40",
         "lon": "-74.6",
-        "president": "Caitlin Rodriguez",
-        "vp": "VACANT",
-        "primary_email": "caitlin.rodriguez.1@us.af.mil",
-        "secondary_email": "None",
+        "president": "Ihaab Majid",
+        "vp": "David Peterson ",
+        "primary_email": "ihaab.majid.1@us.af.mil",
+        "secondary_email": "david.peterson.34@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
