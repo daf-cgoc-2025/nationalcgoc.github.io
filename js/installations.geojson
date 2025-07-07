@@ -1159,17 +1159,17 @@
         "division": "South Division",
         "base": "Maxwell/Gunter AFB",
         "location": "Montgomery, AL",
-        "lat": "32.4",
-        "lon": "-86.4",
-        "president": "Matthew Murla",
-        "vp": "Kaliyah Gorman",
-        "primary_email": "matthew.murla.1@us.af.mil",
-        "secondary_email": "kaliyah.gorman.1@us.af.mil",
+        "lat": "32.38",
+        "lon": "-86.38",
+        "president": "Taylor Hudson-Thompson",
+        "vp": "Neil Young",
+        "primary_email": "taylor.hudson_thompson@us.af.mil",
+        "secondary_email": "neil.young.2@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-86.4, 32.4]
+        "coordinates": [-86.38, 32.38]
       }
     },
     {
