@@ -1519,8 +1519,8 @@
         "region": "European Region",
         "base": "PSAB",
         "location": "Saudi Arabia",
-        "lat": "23",
-        "lon": "47",
+        "lat": "47",
+        "lon": "23",
         "president": "Caleb Lowe ",
         "vp": "Tyler Langan",
         "primary_email": "caleb.lowe.1@us.af.mil",
@@ -1530,7 +1530,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [23, 47]
+        "coordinates": [47, 23]
       }
     },
     {
