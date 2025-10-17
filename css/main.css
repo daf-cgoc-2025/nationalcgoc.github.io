@@ -794,10 +794,18 @@ ul#nav li.current a {
 	color: #fdc501;
 }
 
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 ul#nav li.current a:after {
 	position: absolute;
 	left: 50%;
-	bottom: 0;
+	bottom: 20px;
 	width: 40px;
 	height: 2px;
 	margin-left: -23px;
