@@ -1980,6 +1980,38 @@ table h3 {
 
 
 /** 
+/* 12b. =partners (logos sizing/spacing)
+/* =================================================================== */
+
+.partners .partner-logo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 220px;
+    padding: 12px;
+}
+
+.partners .partner-logo {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+@media only screen and (max-width:768px) {
+    .partners .partner-logo-wrap {
+        min-height: 160px;
+        padding: 8px;
+    }
+    .partners .partner-logo {
+        max-width: 260px;
+    }
+}
+
+
+/** 
 /* 13. =social media
 /* =================================================================== */
 
