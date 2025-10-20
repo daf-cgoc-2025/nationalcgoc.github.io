@@ -641,6 +641,10 @@ header {
 
 	
 }
+/* widen header container so desktop nav fits on one line */
+header .row {
+    max-width: 1400px;
+}
 header.opaque {
 	background: black;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -817,11 +821,21 @@ ul#nav li.current a:after {
 	top: 7px;
 }
 
-/* Add section to shrink left & right margins when the screen gets lower than 890 [with the added navigation items the navigation bar begins to create 2 lines] */
+/* Make nav fit on a single line at wider breakpoints (more links now) */
+@media only screen and (max-width: 1400px) {
+    #nav-wrap { letter-spacing: 1px; }
+    ul#nav li a {
+        padding: 14px .4vw ;
+        font-size: .9vw;
+        white-space: nowrap;
+    }
+}
+
+/* Additional tightening as width decreases */
 @media only screen and (max-width: 1226px) {
 	ul#nav li a {
-		padding: 14px .7vw ;
-		font-size: 1vw;
+        padding: 14px .3vw ;
+        font-size: .8vw;
 		white-space: nowrap;
 	}
 }
@@ -835,8 +849,8 @@ ul#nav li.current a:after {
 
 @media only screen and (max-width: 964px) {
 	ul#nav li a {
-		padding: 14px .2vw ;
-		font-size: 1vw;
+        padding: 14px .2vw ;
+        font-size: .95vw;
 		white-space: nowrap;
 	}
 
@@ -848,7 +862,7 @@ ul#nav li.current a:after {
 
 /* mobile navigation 
 --------------------------------------------------------------------- */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1350px) {
 	#nav-wrap {
 		z-index: 700;
 		display: block;
@@ -991,7 +1005,7 @@ ul#nav li.current a:after {
 
 /* make sure the menu is visible on larger screens
 --------------------------------------------------------------------- */
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:1351px) {
 	#nav-wrap ul#nav {
 		display: block !important;
 	}
