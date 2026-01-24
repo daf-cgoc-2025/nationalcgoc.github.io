@@ -853,7 +853,6 @@ ul#nav li.current a:after {
 	}
 }
 
-
 /* mobile navigation 
 --------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
@@ -979,6 +978,12 @@ ul#nav li.current a:after {
 
 	#nav-wrap a.mobile-btn {
 		display: none;
+	}
+
+	ul#nav li a {
+		padding: 14px .2vw;
+		font-size: 2.5vw;
+		white-space: nowrap;
 	}
 
 	.js #nav-wrap a#toggle-btn {
