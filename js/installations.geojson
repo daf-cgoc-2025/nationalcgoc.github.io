@@ -10,10 +10,10 @@
         "location": "Altus, OK",
         "lat": "34.6",
         "lon": "-99.2",
-        "president": "Trevin Del Nero",
-        "vp": "Tanner Schooley",
-        "primary_email": "iron-child.del_nero.1@us.af.mil",
-        "secondary_email": "tanner.schooley.2@us.af.mil",
+        "president": "Bradley Huffman",
+        "vp": "Katharine Lewis",
+        "primary_email": "bradley.huffman.2@us.af.mil",
+        "secondary_email": "katharine.lewis.1@us.af.mil",
         "org_email": "None",
         "facebook": "https://www.facebook.com/AltusCGOC/"
       },
@@ -74,9 +74,9 @@
         "lat": "34.8",
         "lon": "-92.1",
         "president": "Eliza Kent",
-        "vp": "Zacherry Cano",
+        "vp": "VACANT",
         "primary_email": "eliza.kent.1@us.af.mil",
-        "secondary_email": "zacherry.cano@us.af.mil",
+        "secondary_email": "None",
         "org_email": "None",
         "facebook": "https://www.facebook.com/groups/lrcgoc",
         "instagram": "https://www.instagram.com/lrafb.cgoc/"
@@ -95,10 +95,10 @@
         "location": "Wichita, KS",
         "lat": "37.6",
         "lon": "-97.2",
-        "president": "Jesse Espinoza",
-        "vp": "Christopher Lamermayer",
-        "primary_email": "jesse.espinoza.4@us.af.mil",
-        "secondary_email": "christopher.lamermayer@us.af.mil",
+        "president": "Taylor Daack",
+        "vp": "Michael Koehler",
+        "primary_email": "taylor.daack.1@us.af.mil",
+        "secondary_email": "michael.koehler.7@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -117,8 +117,8 @@
         "lon": "-98.5",
         "president": "Elizabeth Hughes",
         "vp": "Abby Gaab",
-        "primary_email": "None",
-        "secondary_email": "None",
+        "primary_email": "elizabeth.hughes.7@us.af.mil",
+        "secondary_email": "abby.gaab@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -215,10 +215,10 @@
         "location": "Cheyenne, WY",
         "lat": "41.1",
         "lon": "-104.8",
-        "president": "Timothy Burd",
-        "vp": "Kayla Jencks",
-        "primary_email": "timothy.burd@us.af.mil",
-        "secondary_email": "kayla.jencks.1@us.af.mil",
+        "president": "Claire Ryoo",
+        "vp": "George Brown",
+        "primary_email": "haeun.ryoo.mil@health.mil",
+        "secondary_email": "george.brown.37@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -255,10 +255,10 @@
         "location": "Great Falls, MT",
         "lat": "47.5",
         "lon": "-111.1",
-        "president": "Ryan Timms",
-        "vp": "Mae Hickey",
-        "primary_email": "ryan.timm@us.af.mil",
-        "secondary_email": "mae.hickey.1@us.af.mil",
+        "president": "Laynee Allemond",
+        "vp": "Dalton Lundry",
+        "primary_email": "laynee.allemond@us.af.mil",
+        "secondary_email": "dalton.lundry.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -275,10 +275,10 @@
         "location": "Minot, ND",
         "lat": "48.4",
         "lon": "-101.3",
-        "president": "Julianna Salcido",
-        "vp": "William Parker",
-        "primary_email": "julianna.salcido.1@us.af.mil",
-        "secondary_email": "william.parker.43@us.af.mil",
+        "president": "Joseph Santana",
+        "vp": "Bryana Terrell",
+        "primary_email": "joseph.santana.2@us.af.mil",
+        "secondary_email": "bryana.terrell.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -318,7 +318,7 @@
         "president": "Susana Montano ",
         "vp": "Michael Luciani",
         "primary_email": "susana.montano.mil@mail.mil",
-        "secondary_email": "None",
+        "secondary_email": "michael.luciani.1@spaceforce.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -335,10 +335,10 @@
         "location": "Clovis, NM",
         "lat": "34.3",
         "lon": "-103.3",
-        "president": "Stephen Jones",
-        "vp": "Nicholas Cervantes",
-        "primary_email": "stephen.jones.77@us.af.mil",
-        "secondary_email": "nicholas.cervantes.1@us.af.mil",
+        "president": "Martha Kamon",
+        "vp": "Alexandra Waller",
+        "primary_email": "martha.kamon.1@us.af.mil",
+        "secondary_email": "alexandra.waller.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -355,10 +355,10 @@
         "location": "Tucson, AZ",
         "lat": "32.1",
         "lon": "-110.8",
-        "president": "Piper Oliver ",
-        "vp": "Jean-Alix Jean Simmon",
-        "primary_email": "piper.oliver.1@us.af.mi",
-        "secondary_email": "jeanalix.jeansimon.mil@health.mil",
+        "president": "Calvin Yi",
+        "vp": "VACANT",
+        "primary_email": "calvin.yi.1@us.af.mil",
+        "secondary_email": "None",
         "org_email": "None"
       },
       "geometry": {
@@ -375,10 +375,10 @@
         "location": "Abilene, TX",
         "lat": "32.4",
         "lon": "-99.8",
-        "president": "Sean Dastas",
-        "vp": "Cleveland Whitehead III",
-        "primary_email": "sean.dastas@us.af.mil",
-        "secondary_email": "cleveland.whitehead3.mil@health.mil",
+        "president": "Tom Latimer",
+        "vp": "Sari Normile",
+        "primary_email": "thomas.latimer@us.af.mil",
+        "secondary_email": "sari.r.normile.mil@health.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -395,10 +395,10 @@
         "location": "San Angelo, TX",
         "lat": "31.4",
         "lon": "-100.4",
-        "president": "Andrew Burrola",
-        "vp": "VACANT",
-        "primary_email": "andrew.burrola.1@us.af.mil",
-        "secondary_email": "None",
+        "president": "Alexandria Schmidt",
+        "vp": "Manor Akinlosotu",
+        "primary_email": "alexandria.schmidt.1@us.af.mil",
+        "secondary_email": "alexandria.schmidt.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -475,9 +475,9 @@
         "location": "Glendale, AZ",
         "lat": "33.5",
         "lon": "-112.3",
-        "president": "Tawny Bidegain",
+        "president": "VACANT",
         "vp": "Bryce Cook",
-        "primary_email": "tawny.bidegain.1@us.af.mil",
+        "primary_email": "None",
         "secondary_email": "bryce.cook.4@us.af.mil",
         "org_email": "None"
       },
@@ -495,10 +495,10 @@
         "location": "Marysville, CA",
         "lat": "39.1",
         "lon": "-121.3",
-        "president": "Margiealice Uffregomez",
-        "vp": "Mikayla Crone",
-        "primary_email": "margiealice.uffre_gomez.1@us.af.mil",
-        "secondary_email": "mikayla.crone-cisna@us.af.mil",
+        "president": "Isaabel Cameron",
+        "vp": "Heycadi Lugo",
+        "primary_email": "isabel.cameron.1@us.af.mil",
+        "secondary_email": "heycadi.lugo.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -535,10 +535,10 @@
         "location": "Edwards, CA",
         "lat": "34.9",
         "lon": "-117.9",
-        "president": "Raleighcia James",
-        "vp": "Matthew Norwood",
-        "primary_email": "raleighcia.j.james.mil@health.mil",
-        "secondary_email": "matthew.norwood.2@us.af.mil",
+        "president": "Laura Kindley",
+        "vp": "JT Eftimoff",
+        "primary_email": "laura.kindley.1@us.af.mil",
+        "secondary_email": "james.eftimoff.1@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -555,10 +555,10 @@
         "location": "Spokane, WA",
         "lat": "47.6",
         "lon": "-117.6",
-        "president": "Samuel Han",
-        "vp": "Raylyn Faatuai",
-        "primary_email": "samuel.han.3@us.af.mil",
-        "secondary_email": "raylyn.faatuai.1@us.af.mil",
+        "president": "Catherine Hickman",
+        "vp": "VACANT",
+        "primary_email": "catherine.hickman.2@us.af.mil",
+        "secondary_email": "None",
         "org_email": "None"
       },
       "geometry": {
@@ -619,7 +619,7 @@
         "vp": "Scott Hooper",
         "primary_email": "jared.nutt.1@us.af.mil",
         "secondary_email": "scott.hooper.1@us.af.mil",
-        "org_email": "None"
+        "org_email": "56FW.CGOC.OrgBox@us.af.mil"
       },
       "geometry": {
         "type": "Point",
@@ -1785,10 +1785,10 @@
         "location": "Colorado",
         "lat": "38.5",
         "lon": "-104.5",
-        "president": "Susana Montano ",
-        "vp": "Michael Luciani",
-        "primary_email": "susana.montano.mil@mail.mil",
-        "secondary_email": "None",
+        "president": "Robert Lyles",
+        "vp": "Tamer Sayedahmed",
+        "primary_email": "robert.w.lyles7.mil@health.mil",
+        "secondary_email": "tamer.sayedahmed@afacademy.af.edu",
         "org_email": "None",
         "website": "",
         "facebook": ""
