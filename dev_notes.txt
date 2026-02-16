@@ -28,24 +28,6 @@ YouTube (How to connect Git page to Google Domains):
 	- Emails sit in the the @dafcgoc.org domain
 	- Emails can be received from domain email address but they can't be replied with the @dafcgoc.org domain
 
-
-
-**28 Jan 2023**
-
-	Tech Director Taskers:
-			-- Update Western RD (Morcom)
-			-- Website traffic metrics
-			-- Slack: Exec channel
-				--- remove non exec members
-				--- Remove members not in our roster
-			-- SLACK bought the dafcgoc.org
-			-- merge Social Media as the last part of the About Us
-			-- refresh four main photos on Home Page
-				-- do we really need the 4 photos...
-				-- takes forever to load
-			-- facebook/IG af -> daf (Bri Johndow)
-			-- FTOC docs on Resources page
-
 *** GITHUB: Add users as contributors ***
 https://github.com/nationalcgoc/nationalcgoc.github.io/settings/access
 	-- Must be logged in as nationalcgoc user

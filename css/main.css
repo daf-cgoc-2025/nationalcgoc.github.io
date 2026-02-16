@@ -638,9 +638,8 @@ header {
 	-webkit-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;  
-
-	
 }
+
 header.opaque {
 	background: black;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -698,6 +697,10 @@ header .header-social li a {
 
 header .header-social li a:hover {
 	color: #fdc501;
+}
+
+.center {
+	text-align: center;
 }
 
 /* media queries:  
@@ -1179,7 +1182,7 @@ ul#nav li.current a:after {
 	font: 18px/1.9 "raleway-bold", sans-serif;
 	color: rgba(255, 255, 255, 0.7);
 	text-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
-	width: 85%;
+	/* width: 85%; */
 	margin-top: 24px;    
 }
 @media only screen and (max-width: 601px){
