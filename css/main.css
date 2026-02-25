@@ -562,6 +562,10 @@ hr {
 	zoom: 1;
 }
 
+.circle {
+	border-radius: 50%;
+}
+
 /* sections */
 .section-head h1 {
 	font: 15px/30px "raleway-heavy", sans-serif;
@@ -822,8 +826,6 @@ ul#nav li.current a:after {
 	transition: all 0.3s ease-in-out;
 }
 
-
-
 .abs-button {
 	position: absolute;
 	right: 7px;
@@ -1016,6 +1018,24 @@ ul#nav li.current a:after {
 
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(21, 21, 21, 0.756);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {background-color:rgba(206, 206, 206, 0.1);}
+
+ul#nav li.dropdown-current a {
+	color: #fdc501;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-current:hover .dropdown-content {
+  display: block;
+}
 
 /* 
 /* 07. =carousel
