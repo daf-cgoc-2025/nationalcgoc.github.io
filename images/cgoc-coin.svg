@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="95" fill="#1B2A4A" stroke="#FFD700" stroke-width="3"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#FFD700" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="100" y="65" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="bold">DEPARTMENT OF</text>
+  <text x="100" y="80" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="bold">THE AIR FORCE</text>
+  <text x="100" y="110" font-family="Arial, sans-serif" font-size="16" fill="#FFD700" text-anchor="middle" font-weight="bold">CGOC</text>
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle">CHALLENGE</text>
+  <text x="100" y="145" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle">COIN</text>
+</svg>
