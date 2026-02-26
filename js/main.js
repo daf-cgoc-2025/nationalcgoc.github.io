@@ -78,7 +78,18 @@
   });
 
   $("ul#nav li a").on("click", function () {
-    if (nav.hasClass("mobile")) nav.fadeOut("fast");
+    if (nav.hasClass("mobile")) {
+      // If this is a dropdown top-level link, toggle the sub-menu instead of closing nav
+      var $parent = $(this).parent();
+      if ($parent.hasClass("dropdown") || $parent.hasClass("dropdown-current")) {
+        if ($(this).hasClass("top-level")) {
+          $parent.toggleClass("open");
+          $parent.children(".dropdown-content").slideToggle(300);
+          return false;
+        }
+      }
+      nav.fadeOut("fast");
+    }
   });
 
   /*----------------------------------------------------*/

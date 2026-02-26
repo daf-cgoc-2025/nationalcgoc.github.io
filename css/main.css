@@ -562,6 +562,14 @@ hr {
 	zoom: 1;
 }
 
+.circle {
+	border-radius: 50%;
+}
+
+.radius-small {
+	border-radius: 5%;
+}
+
 /* sections */
 .section-head h1 {
 	font: 15px/30px "raleway-heavy", sans-serif;
@@ -668,7 +676,7 @@ header .logo a {
 	color: transparent;
 	width: 114px;
 	height: 66px;
-	background: url("../images/afcgoc-logo.png") no-repeat center;
+	background: url("../assets/logos/dafcgoc-logo.png") no-repeat center;
 	background-size: 90px 60px;
 }
 
@@ -856,6 +864,36 @@ ul#nav li.current a:after {
 	}
 }
 
+.nav-icon {
+	display: inline-block;
+	vertical-align: middle;
+	transition: transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .nav-icon,
+.dropdown-current:hover .nav-icon {
+	transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(21, 21, 21, 0.756);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {background-color:rgba(206, 206, 206, 0.1);}
+
+ul#nav li.dropdown-current > a {
+	color: #fdc501;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-current:hover .dropdown-content {
+  display: block;
+}
+
 /* mobile navigation 
 --------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
@@ -1003,6 +1041,29 @@ ul#nav li.current a:after {
 		display: block;
 	}
 
+	.dropdown-content {
+		display: block;
+		position: relative;
+		background-color: rgba(206, 206, 206, 0.1);
+		width: 100%;
+		box-shadow: none;
+		z-index: 1;
+		padding-left: 15px;
+	}
+
+	.dropdown .nav-icon,
+	.dropdown-current .nav-icon {
+		transform: rotate(360deg);
+	}
+
+#nav-wrap ul#nav li.dropdown-current > a, li.dropdown-current a {
+	color: #fdc501;
+}
+
+ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
+	cursor: pointer;
+}
+
 }
 
 /* make sure the menu is visible on larger screens
@@ -1014,7 +1075,6 @@ ul#nav li.current a:after {
 
 }
 
-
 /* 
 /* 07. =carousel
 /* =================================================================== */
@@ -1022,7 +1082,7 @@ ul#nav li.current a:after {
 /* carousel background images */
 .bg {
   /* The image used */
-  background-image: url(../images/home-bg.jpg);
+  background-image: url(../assets/images/home-bg.jpg);
 
   /* Full height */
   height: 40%; 
@@ -1035,22 +1095,22 @@ ul#nav li.current a:after {
 
 @media only screen and (max-width: 601px){
 	.bg {
-		background-image: url(../images/home-bg_mobile.jpg);
+		background-image: url(../assets/images/home-bg_mobile.jpg);
 		height: 10%; 
 	}
 }
 
 .first {
-	background: #0F1215 url(../images/home-bg.jpg) no-repeat center;
+	background: #0F1215 url(../assets/images/home-bg.jpg) no-repeat center;
 }
 .second {
-	background: #0F1215 url(../images/bg-A.jpg) no-repeat center;
+	background: #0F1215 url(../assets/images/bg-A.jpg) no-repeat center;
 }
 .third {
-	background: #0F1215 url(../images/bg-B.jpg) no-repeat center;
+	background: #0F1215 url(../assets/images/bg-B.jpg) no-repeat center;
 }
 .fourth {
-	background: #0F1215 url(../images/bg-C.jpg) no-repeat center;
+	background: #0F1215 url(../assets/images/bg-C.jpg) no-repeat center;
 }
 
 .slider {
@@ -1747,8 +1807,219 @@ ul#nav li.current a:after {
 }
 
 
-/* 
-/* 11. =councils
+/*
+/* 11. =awards page
+/* =================================================================== */
+
+#leadership.awards-page {
+	overflow-x: hidden;
+}
+
+.awards-layout {
+	display: flex;
+	gap: 40px;
+	width: 100%;
+	clear: both;
+	box-sizing: border-box;
+}
+
+.awards-content {
+	flex: 1;
+	min-width: 0;
+}
+
+.awards-sidebar {
+	width: 300px;
+	flex-shrink: 0;
+	position: sticky;
+	top: 90px;
+	align-self: flex-start;
+}
+
+#leadership .awards-sidebar h3 {
+	font: 22px/30px "raleway-heavy", sans-serif;
+	color: #fdc501;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 24px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid rgba(253, 197, 1, 0.3);
+}
+
+.incentive-card {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 8px;
+	padding: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.incentive-card img {
+	max-width: 200px;
+	display: block;
+	margin: 0 auto 15px;
+}
+
+.incentive-card h4 {
+	font: 16px/24px "raleway-heavy", sans-serif;
+	color: #fdc501;
+	margin-bottom: 8px;
+	text-transform: none;
+}
+
+.incentive-card p {
+	font: 14px/22px "merriweather-light", serif;
+	color: #969696;
+	margin: 0;
+}
+
+.year-card {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+.year-card__heading {
+	font: 28px/36px "raleway-heavy", sans-serif;
+	color: #fdc501;
+	margin-bottom: 24px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid rgba(253, 197, 1, 0.2);
+}
+
+.year-card__heading i {
+	margin-right: 10px;
+	font-size: 24px;
+}
+
+.annual-winners {
+	border-left: 3px solid #fdc501;
+	padding-left: 20px;
+	margin-bottom: 28px;
+}
+
+.annual-winners h4 {
+	font: 16px/24px "raleway-heavy", sans-serif;
+	color: #fdc501;
+	margin-bottom: 12px;
+	text-transform: none;
+}
+
+.annual-winners p {
+	font: 15px/26px "merriweather-light", serif;
+	color: #d9d9d9;
+	margin: 0 0 6px;
+}
+
+.annual-winners p span {
+	color: #969696;
+	font-size: 13px;
+}
+
+.quarterly-winners h4 {
+	font: 16px/24px "raleway-heavy", sans-serif;
+	color: #FFFFFF;
+	margin-bottom: 16px;
+	text-transform: none;
+}
+
+.quarterly-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.quarter-block {
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 6px;
+	padding: 16px;
+}
+
+.quarter-block__label {
+	font: 13px/18px "raleway-heavy", sans-serif;
+	color: #fdc501;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+
+.quarter-block p {
+	font: 14px/22px "merriweather-light", serif;
+	color: #d9d9d9;
+	margin: 0 0 4px;
+}
+
+.quarter-block p span {
+	color: #969696;
+	font-size: 12px;
+}
+
+/* awards page responsive */
+@media only screen and (max-width:1024px) {
+	.awards-layout {
+		gap: 30px;
+	}
+
+	.awards-sidebar {
+		width: 280px;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.awards-layout {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.awards-sidebar {
+		width: 100%;
+		position: static;
+		order: -1;
+		margin-bottom: 30px;
+	}
+
+	#leadership .awards-sidebar h3 {
+		text-align: center;
+	}
+
+	.incentive-card {
+		padding: 20px;
+	}
+
+	.year-card {
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	.year-card__heading {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.quarterly-grid {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+}
+
+@media only screen and (max-width:400px) {
+	.year-card {
+		padding: 15px;
+	}
+
+	.annual-winners {
+		padding-left: 15px;
+	}
+
+	.quarter-block {
+		padding: 12px;
+	}
+}
+
+
+/*
+/* 12. =councils
 /* =================================================================== */
 
 
@@ -1907,7 +2178,7 @@ table h3 {
 
 
 /** 
-/* 12. =resources
+/* 13. =resources
 /* =================================================================== */
 
 #resources {
@@ -1996,7 +2267,7 @@ table h3 {
 
 
 /** 
-/* 13. =social media
+/* 14. =social media
 /* =================================================================== */
 
 #social {
@@ -2017,7 +2288,7 @@ table h3 {
 
 
 /** 
-/* 14. =contact
+/* 15. =contact
 /* =================================================================== */
 
 #contact {
@@ -2361,7 +2632,7 @@ input[type="email"],
 
 
 /** 
-/* 15. =login/register
+/* 16. =login/register
 /* =================================================================== */
 
 #login,
@@ -2492,7 +2763,7 @@ input[type="email"],
 
 
 /** 
-/* 16. =footer
+/* 17. =footer
 /* =================================================================== */
 
 footer {
