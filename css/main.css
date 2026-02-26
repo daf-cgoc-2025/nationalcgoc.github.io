@@ -1038,7 +1038,7 @@ ul#nav li.dropdown-current a {
 	}
 
 	.dropdown-content {
-		display: none;
+		display: block;
 		position: relative;
 		background-color: rgba(206, 206, 206, 0.1);
 		width: 100%;
@@ -1047,20 +1047,8 @@ ul#nav li.dropdown-current a {
 		padding-left: 15px;
 	}
 
-	/* Disable desktop hover — only .open class controls visibility on mobile */
-	.dropdown:hover .dropdown-content,
-	.dropdown-current:hover .dropdown-content {
-		display: none;
-	}
-
-	/* Disable desktop hover rotation on mobile — only .open controls caret */
-	.dropdown:hover .nav-icon,
-	.dropdown-current:hover .nav-icon {
-		transform: rotate(0deg);
-	}
-
-	.dropdown.open > a .nav-icon,
-	.dropdown-current.open > a .nav-icon {
+	.dropdown .nav-icon,
+	.dropdown-current .nav-icon {
 		transform: rotate(180deg);
 	}
 
