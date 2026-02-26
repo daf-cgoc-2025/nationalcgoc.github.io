@@ -676,7 +676,7 @@ header .logo a {
 	color: transparent;
 	width: 114px;
 	height: 66px;
-	background: url("../images/afcgoc-logo.png") no-repeat center;
+	background: url("../assets/images/afcgoc-logo.png") no-repeat center;
 	background-size: 90px 60px;
 }
 
@@ -1082,7 +1082,7 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 /* carousel background images */
 .bg {
   /* The image used */
-  background-image: url(../images/home-bg.jpg);
+  background-image: url(../assets/images/home-bg.jpg);
 
   /* Full height */
   height: 40%; 
@@ -1095,22 +1095,22 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 
 @media only screen and (max-width: 601px){
 	.bg {
-		background-image: url(../images/home-bg_mobile.jpg);
+		background-image: url(../assets/images/home-bg_mobile.jpg);
 		height: 10%; 
 	}
 }
 
 .first {
-	background: #0F1215 url(../images/home-bg.jpg) no-repeat center;
+	background: #0F1215 url(../assets/images/home-bg.jpg) no-repeat center;
 }
 .second {
-	background: #0F1215 url(../images/bg-A.jpg) no-repeat center;
+	background: #0F1215 url(../assets/images/bg-A.jpg) no-repeat center;
 }
 .third {
-	background: #0F1215 url(../images/bg-B.jpg) no-repeat center;
+	background: #0F1215 url(../assets/images/bg-B.jpg) no-repeat center;
 }
 .fourth {
-	background: #0F1215 url(../images/bg-C.jpg) no-repeat center;
+	background: #0F1215 url(../assets/images/bg-C.jpg) no-repeat center;
 }
 
 .slider {
