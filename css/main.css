@@ -566,6 +566,10 @@ hr {
 	border-radius: 50%;
 }
 
+.radius-small {
+	border-radius: 5%;
+}
+
 /* sections */
 .section-head h1 {
 	font: 15px/30px "raleway-heavy", sans-serif;
@@ -882,7 +886,7 @@ ul#nav li.current a:after {
 
 .dropdown-content a:hover {background-color:rgba(206, 206, 206, 0.1);}
 
-ul#nav li.dropdown-current a {
+ul#nav li.dropdown-current > a {
 	color: #fdc501;
 }
 
@@ -1049,7 +1053,7 @@ ul#nav li.dropdown-current a {
 
 	.dropdown .nav-icon,
 	.dropdown-current .nav-icon {
-		transform: rotate(180deg);
+		transform: rotate(360deg);
 	}
 
 #nav-wrap ul#nav li.dropdown-current > a, li.dropdown-current a {
