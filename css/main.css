@@ -1035,7 +1035,7 @@ ul#nav li.dropdown-current a {
   z-index: 1;
 }
 
-ul#nav li.dropdown-current a {
+#nav-wrap ul#nav li.dropdown-current > a, li.dropdown-current a {
 	color: #fdc501;
 }
 
