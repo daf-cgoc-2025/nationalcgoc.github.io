@@ -1,150 +1,99 @@
-// initialize Leaflet
-var map = L.map('map', {
-  zoomControl: false, 
+// Initialize Leaflet map
+const map = L.map('map', {
+  zoomControl: false,
   attributionControl: false,
 });
 
-// set default view based on device (tablets are between 768 and 922 pixels wide, phones are less than 768 pixels wide)
-var width = document.documentElement.clientWidth;
+// Set default view based on device width
+const width = document.documentElement.clientWidth;
 if (width < 768) {
-    map.setView({lon: -99, lat: 40}, 2); // for mobile, center on US
-}  else {
-    map.setView({lon: 0, lat: 50}, 2); // otherwise, center on world
+  map.setView([40, -99], 2);
+} else {
+  map.setView([50, 0], 2);
 }
 
-// add the OpenStreetMap tiles
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// CartoDB Dark Matter tiles for dark aesthetic
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
-  attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>'
+  attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-// set max bounds to avoid infinite scroll
-var southWest = L.latLng(-89.98155760646617, -180),
-northEast = L.latLng(89.99346179538875, 180);
-var bounds = L.latLngBounds(southWest, northEast);
+// Set max bounds to avoid infinite scroll
+const southWest = L.latLng(-89.98155760646617, -180);
+const northEast = L.latLng(89.99346179538875, 180);
+const bounds = L.latLngBounds(southWest, northEast);
 
 map.setMaxBounds(bounds);
-map.on('drag', function() {
-    map.panInsideBounds(bounds, { animate: false });
+map.on('drag', function () {
+  map.panInsideBounds(bounds, { animate: false });
 });
 
-// add points from GeoJSON instance
-var geojsonLayer = new L.GeoJSON.AJAX("../js/installations.geojson", {onEachFeature:popUp});
+// Gold circle marker style
+const markerStyle = {
+  radius: 7,
+  fillColor: '#fdc501',
+  color: '#b8900a',
+  weight: 2,
+  fillOpacity: 0.85,
+};
 
-function popUp(feature, layer) {
+// Build popup content from feature properties
+function buildPopup(feature) {
+  const p = feature.properties;
 
-  // validate region
-  var region = "";
+  const region = p.region || '';
+  const division = p.division ? `, ${p.division}` : '';
+  const branch = p.branch ? `, ${p.branch}` : '';
 
-  if (!feature.properties.region) {
-      region = ""; 
-  } else {
-    region = feature.properties.region;
+  let emailStr = '';
+  const email = p.org_email !== 'None' ? p.org_email
+    : p.primary_email !== 'None' ? p.primary_email
+    : p.secondary_email !== 'None' ? p.secondary_email
+    : null;
+  if (email) {
+    emailStr = `<a href="mailto:${email}">Email this Council</a><br>`;
   }
 
-  // validate division
-  var division = "";
+  const websiteStr = p.website
+    ? `<a href="${p.website}" target="_blank">Visit their Website</a><br>`
+    : '';
+  const facebookStr = p.facebook
+    ? `<a href="${p.facebook}" target="_blank">Visit their Facebook Page</a><br>`
+    : '';
+  const instagramStr = p.instagram
+    ? `<a href="${p.instagram}" target="_blank">Visit their Instagram</a>`
+    : '';
 
-  if (!feature.properties.division) {
-      division = ""; 
-  } else {
-    division = ', ' + feature.properties.division;
-  }
+  const liaisonStr = p.liason && p.liason.length >= 5
+    ? `Liaison: ${p.liason}<br>`
+    : '';
 
-  // validate branch
-  var branch = "";
-
-  if (!feature.properties.branch) {
-      branch = ""; 
-  } else {
-    branch = ', ' + feature.properties.branch;
-  }
-
-  // validate email
-  var emailStr = "";
-
-  if (feature.properties.org_email === "None") {
-    if (feature.properties.primary_email === "None") {
-        if (feature.properties.secondary_email === "None") {
-          emailStr = "";
-        } else {
-          emailStr = '<a href="mailto:' + feature.properties.secondary_email + '">Email this Council</a>' + '<br>';
-        }
-    } else {
-      emailStr = '<a href="mailto:' + feature.properties.primary_email + '">Email this Council</a>' + '<br>';
-    }
-  } else {
-    emailStr = '<a href="mailto:' + feature.properties.org_email + '">Email this Council</a>' + '<br>';
-  }
-
-  // validate website
-  var websiteStr = "";
-
-  if (!feature.properties.website) {
-    websiteStr = ""; 
-  } else {
-    websiteStr = '<a href="' + feature.properties.website + '" target="_blank">Visit their Website</a>' + '<br>';
-  }
-
-  // validate facebook
-  var facebookStr = "";
-
-  if (!feature.properties.facebook) {
-    facebookStr = ""; 
-  } else {
-    facebookStr = '<a href="' + feature.properties.facebook + '" target="_blank">Visit their Facebook Page</a>' + '<br>';
-  }
-
-  // validate instagram
-  var instagramStr = "";
-
-  if (!feature.properties.instagram) {
-    instagramStr = ""; 
-  } else {
-    instagramStr = '<a href="' + feature.properties.instagram + '" target="_blank">Visit their Instagram</a>';
-  }
-
-    // validate region
-  var liason = "";
-
-  if (!feature.properties.liason) {
-      liason = ""; 
-  } else {
-    liason = feature.properties.liason;
-  }
-
-  // create tooltip content
-  if (liason.length < 5) {
-    var popupContent = 
-    '<b>' + feature.properties.base + '</b>' + '<br>' + 
-    feature.properties.location + '<br>' +
-    region + division + branch +'<br>' +
-    '<br>' +
-    'President: ' + feature.properties.president + '<br>' +
-    'Vice President: ' + feature.properties.vp + '<br>' +
-    '<br>' +
-    emailStr +
-    websiteStr + 
-    facebookStr +
-    instagramStr;
-    layer.bindPopup(popupContent);
-  } else {
-    var popupContent = 
-    '<b>' + feature.properties.base + '</b>' + '<br>' + 
-    feature.properties.location + '<br>' +
-    region + division + branch +'<br>' +
-    '<br>' +
-    'Liason: ' + feature.properties.liason + '<br>' +
-    'President: ' + feature.properties.president + '<br>' +
-    'Vice President: ' + feature.properties.vp + '<br>' +
-    '<br>' +
-    emailStr +
-    websiteStr + 
-    facebookStr +
-    instagramStr;
-    layer.bindPopup(popupContent);
-  }
-  
+  return `
+    <b>${p.base}</b><br>
+    ${p.location}<br>
+    ${region}${division}${branch}<br>
+    <br>
+    ${liaisonStr}
+    President: ${p.president}<br>
+    Vice President: ${p.vp}<br>
+    <br>
+    ${emailStr}
+    ${websiteStr}
+    ${facebookStr}
+    ${instagramStr}
+  `.trim();
 }
 
-geojsonLayer.addTo(map);
+// Load GeoJSON and add to map with gold circle markers
+fetch('../js/installations.geojson')
+  .then(response => response.json())
+  .then(data => {
+    L.geoJSON(data, {
+      pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, markerStyle);
+      },
+      onEachFeature: function (feature, layer) {
+        layer.bindPopup(buildPopup(feature));
+      }
+    }).addTo(map);
+  });

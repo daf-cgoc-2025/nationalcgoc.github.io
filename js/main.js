@@ -1,110 +1,176 @@
 /*---------------------------------------------------------------------------------
-/*
-/* Main JS
-/*
------------------------------------------------------------------------------------*/
+ * Main JS - Vanilla (no jQuery)
+ *---------------------------------------------------------------------------------*/
 
-(function ($) {
+(function () {
   "use strict";
 
-  /*---------------------------------------------------- */
+  /* ---------------------------------------------------- */
   /* Preloader
-	------------------------------------------------------ */
-  $(window).load(function () {
-    // will first fade out the loading animation
-    $("#loader").fadeOut("slow", function () {
-      // will fade out the whole DIV that covers the website.
-      $("#preloader").delay(300).fadeOut("slow");
-    });
-  });
+  /* ---------------------------------------------------- */
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    const preloader = document.getElementById("preloader");
 
-  /*----------------------------------------------------*/
-  /* Adjust Primary Navigation Background Opacity
-	------------------------------------------------------*/
-  $(window).on("scroll", function () {
-    var h = $("header").height();
-    var y = $(window).scrollTop();
-    var header = $("#main-header");
-
-    if (y > h + 30 && $(window).outerWidth() > 768) {
-      header.addClass("opaque");
-    } else {
-      if (y < h + 30) {
-        header.removeClass("opaque");
-      } else {
-        header.addClass("opaque");
-      }
-    }
-  });
-
-  /*----------------------------------------------------*/
-  /* FitText Settings
-  	------------------------------------------------------ */
-  setTimeout(function () {
-    $("#hero-slider h1").fitText(1, {
-      minFontSize: "30px",
-      maxFontSize: "49px",
-    });
-  }, 100);
-
-  /*-----------------------------------------------------*/
-  /* Mobile Menu
-   ------------------------------------------------------ */
-  var menu_icon = $("<span class='menu-icon'>Menu</span>");
-  var toggle_button = $("<a>", {
-    id: "toggle-btn",
-    html: "",
-    title: "Menu",
-    href: "#",
-  });
-  var nav_wrap = $("nav#nav-wrap");
-  var nav = $("ul#nav");
-
-  /* if JS is enabled, remove the two a.mobile-btns 
-  	and dynamically prepend a.toggle-btn to #nav-wrap */
-  nav_wrap.find("a.mobile-btn").remove();
-  toggle_button.append(menu_icon);
-  nav_wrap.prepend(toggle_button);
-
-  toggle_button.on("click", function (e) {
-    e.preventDefault();
-    nav.slideToggle("fast");
-  });
-
-  if (toggle_button.is(":visible")) nav.addClass("mobile");
-  $(window).resize(function () {
-    if (toggle_button.is(":visible")) nav.addClass("mobile");
-    else nav.removeClass("mobile");
-  });
-
-  $("ul#nav li a").on("click", function () {
-    if (nav.hasClass("mobile")) {
-      // If this is a dropdown top-level link, toggle the sub-menu instead of closing nav
-      var $parent = $(this).parent();
-      if ($parent.hasClass("dropdown") || $parent.hasClass("dropdown-current")) {
-        if ($(this).hasClass("top-level")) {
-          $parent.toggleClass("open");
-          $parent.children(".dropdown-content").slideToggle(300);
-          return false;
+    if (loader) {
+      loader.style.transition = "opacity 0.5s";
+      loader.style.opacity = "0";
+      setTimeout(function () {
+        if (preloader) {
+          preloader.style.transition = "opacity 0.5s";
+          preloader.style.opacity = "0";
+          setTimeout(function () {
+            preloader.style.display = "none";
+          }, 500);
         }
-      }
-      nav.fadeOut("fast");
+      }, 300);
     }
   });
 
-  /*----------------------------------------------------*/
-  /*	Modal Popup
-	------------------------------------------------------*/
-  $(".item-wrap a").magnificPopup({
-    type: "inline",
-    fixedContentPos: false,
-    removalDelay: 300,
-    showCloseBtn: false,
-    mainClass: "mfp-fade",
+  /* ---------------------------------------------------- */
+  /* Adjust Primary Navigation Background Opacity
+  /* ---------------------------------------------------- */
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("main-header");
+    if (!header) return;
+    const h = header.offsetHeight;
+    const y = window.scrollY;
+
+    if (y > h + 30) {
+      header.classList.add("opaque");
+    } else {
+      header.classList.remove("opaque");
+    }
   });
 
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
+  /* ---------------------------------------------------- */
+  /* Mobile Menu
+  /* ---------------------------------------------------- */
+  const navWrap = document.querySelector("nav#nav-wrap");
+  const nav = document.querySelector("ul#nav");
+
+  if (navWrap && nav) {
+    // Remove the static mobile-btn links
+    navWrap.querySelectorAll("a.mobile-btn").forEach(function (btn) {
+      btn.remove();
+    });
+
+    // Create toggle button
+    const toggleBtn = document.createElement("a");
+    toggleBtn.id = "toggle-btn";
+    toggleBtn.href = "#";
+    toggleBtn.title = "Menu";
+    toggleBtn.innerHTML = '<span class="menu-icon">Menu</span>';
+    navWrap.prepend(toggleBtn);
+
+    // Toggle nav visibility
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (nav.style.display === "block") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "block";
+      }
+    });
+
+    // Handle mobile class
+    function checkMobile() {
+      if (window.getComputedStyle(toggleBtn).display !== "none") {
+        nav.classList.add("mobile");
+      } else {
+        nav.classList.remove("mobile");
+        nav.style.display = "";
+      }
+    }
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    // Handle nav link clicks
+    nav.addEventListener("click", function (e) {
+      const link = e.target.closest("a");
+      if (!link) return;
+
+      if (nav.classList.contains("mobile")) {
+        const parent = link.parentElement;
+        if (
+          (parent.classList.contains("dropdown") || parent.classList.contains("dropdown-current")) &&
+          link.classList.contains("top-level")
+        ) {
+          e.preventDefault();
+          parent.classList.toggle("open");
+          const dropdownContent = parent.querySelector(".dropdown-content");
+          if (dropdownContent) {
+            dropdownContent.style.display =
+              dropdownContent.style.display === "block" ? "none" : "block";
+          }
+          return;
+        }
+        nav.style.display = "none";
+      }
+    });
+  }
+
+  /* ---------------------------------------------------- */
+  /* Modal Popup (inline modals for home page portfolio)
+  /* ---------------------------------------------------- */
+  document.querySelectorAll(".item-wrap a").forEach(function (trigger) {
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      const modal = document.querySelector(targetId);
+      if (!modal) return;
+
+      // Create overlay
+      const overlay = document.createElement("div");
+      overlay.className = "mfp-bg mfp-fade";
+      overlay.style.cssText =
+        "position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:1042;opacity:0;transition:opacity 0.3s";
+      document.body.appendChild(overlay);
+      requestAnimationFrame(function () {
+        overlay.style.opacity = "1";
+      });
+
+      // Create wrapper
+      const wrapper = document.createElement("div");
+      wrapper.className = "mfp-wrap";
+      wrapper.style.cssText =
+        "position:fixed;top:0;left:0;width:100%;height:100%;z-index:1043;overflow-y:auto;display:flex;align-items:center;justify-content:center;padding:20px";
+
+      // Clone and show modal content
+      const content = modal.cloneNode(true);
+      content.classList.remove("mfp-hide");
+      content.style.cssText =
+        "max-width:700px;width:100%;background:#111;border-radius:8px;overflow:hidden;position:relative";
+
+      // Add close button
+      const closeBtn = document.createElement("button");
+      closeBtn.className = "popup-modal-dismiss";
+      closeBtn.style.cssText =
+        "position:absolute;top:10px;right:15px;background:none;border:none;color:#fff;font-size:28px;cursor:pointer;z-index:10;line-height:1";
+      closeBtn.innerHTML = "&times;";
+      content.appendChild(closeBtn);
+
+      wrapper.appendChild(content);
+      document.body.appendChild(wrapper);
+      document.body.style.overflow = "hidden";
+
+      function closeModal() {
+        overlay.style.opacity = "0";
+        setTimeout(function () {
+          overlay.remove();
+          wrapper.remove();
+          document.body.style.overflow = "";
+        }, 300);
+      }
+
+      overlay.addEventListener("click", closeModal);
+      closeBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        closeModal();
+      });
+      wrapper.addEventListener("click", function (e) {
+        if (e.target === wrapper) closeModal();
+      });
+    });
   });
-})(jQuery);
+})();
