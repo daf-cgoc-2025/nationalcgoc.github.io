@@ -811,29 +811,58 @@ header {
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 600;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;  
+	z-index: 1000;
+	background: rgba(15, 18, 21, 0.72);
+	-webkit-backdrop-filter: blur(20px) saturate(180%);
+	backdrop-filter: blur(20px) saturate(180%);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
+/* Fallback when backdrop-filter is unsupported */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+	header {
+		background: rgba(15, 18, 21, 0.96);
+	}
+}
+
+/* Past-fold: marginally more opaque + soft shadow */
 header.opaque {
-	background: black;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(15, 18, 21, 0.86);
+	border-bottom-color: rgba(255, 255, 255, 0.12);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	header,
+	#nav-wrap a,
+	.nav-icon,
+	.dropdown-content,
+	#nav-wrap .menu-icon,
+	#nav-wrap .menu-icon:before,
+	#nav-wrap .menu-icon:after {
+		transition: none !important;
+	}
+}
+
+/* Header row spans full viewport width so the 1140px content cap doesn't
+   squeeze the logo and 9 nav items into a too-narrow column. */
+header > .row {
+	max-width: none;
+	width: 100%;
+	padding: 0 24px;
+	margin: 0;
 }
 
 /* header logo */
 header .logo {
 	float: left;
 	width: auto;
-	margin-left: 15px;
+	margin-left: 0;
 	margin-right: 30px;
-	z-index: 600;    
-	
-	/* add position relative since z-index only applies to  
-	elements that have been given an explicit position */
+	z-index: 1001;
+
+	/* z-index only applies to positioned elements */
 	position: relative;
 }
 
@@ -891,18 +920,19 @@ header .header-social li a:hover {
 
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
+	/* On tablet/mobile, slightly more opaque for legibility over varied hero content */
 	header {
-		background: black;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		background: rgba(15, 18, 21, 0.88);
 	}
 
-	header .row {
-		width: 100%;
+	header > .row {
+		padding: 0 16px;
 	}
 
 	header .logo {
-		margin-left: -30px;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 }
@@ -922,7 +952,7 @@ header .header-social li a:hover {
 	font: 13px "raleway-heavy", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	float: left;  
+	float: right;
 }
 
 /* hide toggle button */
@@ -933,10 +963,14 @@ header .header-social li a:hover {
 ul#nav {
 	min-height: 66px;
 	display: inline-block;
-	width: auto;  
+	width: auto;
 
 	/* left align the menu */
 	text-align: left;
+
+	/* keep items on one line; if they ever overrun we'd rather see overflow
+	   than have items wrap below the nav (mobile breakpoint catches it first) */
+	white-space: nowrap;
 }
 
 ul#nav li {
@@ -984,21 +1018,36 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-ul#nav li.current a:after {
+ul#nav li.current > a:after,
+ul#nav li > a[aria-current="page"]:after {
+	content: '';
 	position: absolute;
 	left: 50%;
-	bottom: 20px;
-	width: 40px;
+	bottom: 12px;
+	width: 26px;
 	height: 2px;
-	margin-left: -23px;
-	background-color: white;
-	content: '\0020';
-	display: block;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	margin-left: -13px;
+	background-color: var(--color-gold);
+	border-radius: 2px;
+	transition: width 0.25s ease, margin-left 0.25s ease;
+}
+
+ul#nav li.current > a:hover:after,
+ul#nav li > a[aria-current="page"]:hover:after {
+	width: 40px;
+	margin-left: -20px;
+}
+
+ul#nav li a:focus-visible {
+	outline: 2px solid var(--color-gold);
+	outline-offset: -4px;
+	border-radius: 4px;
+}
+
+header .logo a:focus-visible {
+	outline: 2px solid var(--color-gold);
+	outline-offset: 2px;
+	border-radius: 4px;
 }
 
 .abs-button {
@@ -1007,31 +1056,19 @@ ul#nav li.current a:after {
 	top: 7px;
 }
 
-/* Add section to shrink left & right margins when the screen gets lower than 890 [with the added navigation items the navigation bar begins to create 2 lines] */
-@media only screen and (max-width: 1226px) {
+/* Tighten desktop nav padding between 1024-1280 so 9 items fit comfortably
+   without dropping font-size to unreadable vw values. Below 1024 we switch
+   to the mobile hamburger so cramped intermediate widths are avoided. */
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
 	ul#nav li a {
-		padding: 14px .7vw ;
-		font-size: 1vw;
-		white-space: nowrap;
-	}
-}
-
-/* @media only screen and (max-width: 1074px) {
-	ul#nav li a {
-		padding: 4vw 4px;
-		font-size: 1vw;
-	}
-} */
-
-@media only screen and (max-width: 964px) {
-	ul#nav li a {
-		padding: 14px .2vw ;
-		font-size: 1vw;
+		padding: 14px 8px;
+		font-size: 12px;
+		letter-spacing: 1px;
 		white-space: nowrap;
 	}
 
-	.logo {
-		margin-right: 10px;
+	header .logo {
+		margin-right: 16px;
 	}
 }
 
@@ -1042,34 +1079,72 @@ ul#nav li.current a:after {
 }
 
 .dropdown:hover .nav-icon,
-.dropdown-current:hover .nav-icon {
+.dropdown:focus-within .nav-icon,
+.dropdown-current:hover .nav-icon,
+.dropdown.is-open .nav-icon,
+.dropdown > a[aria-expanded="true"] .nav-icon {
 	transform: rotate(180deg);
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(21, 21, 21, 0.756);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 180px;
+	padding: 6px;
+	background: rgba(15, 18, 21, 0.85);
+	-webkit-backdrop-filter: blur(20px) saturate(180%);
+	backdrop-filter: blur(20px) saturate(180%);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 8px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+	z-index: 1001;
 }
 
-.dropdown-content a:hover {background-color:rgba(206, 206, 206, 0.1);}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+	.dropdown-content {
+		background: rgba(15, 18, 21, 0.97);
+	}
+}
+
+.dropdown-content a {
+	display: block;
+	padding: 10px 16px;
+	color: #ffffff;
+	font-size: 13px;
+	border-radius: 4px;
+	transition: background 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus-visible {
+	background: rgba(253, 197, 1, 0.12);
+	color: var(--color-gold);
+	outline: none;
+}
+
+.dropdown-content a:focus-visible {
+	box-shadow: inset 0 0 0 1px var(--color-gold);
+}
 
 ul#nav li.dropdown-current > a {
-	color: #fdc501;
+	color: var(--color-gold);
 }
 
-.dropdown:hover .dropdown-content, .dropdown-current:hover .dropdown-content {
-  display: block;
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.dropdown-current:hover .dropdown-content,
+.dropdown.is-open .dropdown-content,
+.dropdown > a[aria-expanded="true"] + .dropdown-content {
+	display: block;
 }
 
-/* mobile navigation 
+/* mobile navigation
 --------------------------------------------------------------------- */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1024px) {
 	#nav-wrap {
-		z-index: 700;
+		z-index: 1001;
 		display: block;
 		width: 100%;
 		float: none;
@@ -1082,16 +1157,28 @@ ul#nav li.dropdown-current > a {
 	#nav-wrap > a {
 		border: none;
 		color: #FFFFFF;
-		height: 40px;
-		min-width: 40px;
+		height: 44px;
+		min-width: 44px;
 		font-size: 12px;
 		text-align: left;
 		float: right;
 		display: block;
 		padding: 0;
 		position: relative;
-		top: 13px;
-		right: 20px;
+		top: 11px;
+		right: 16px;
+		border-radius: 6px;
+		background: transparent;
+		transition: background 0.2s ease;
+	}
+
+	#nav-wrap > a:hover {
+		background: rgba(253, 197, 1, 0.08);
+	}
+
+	#nav-wrap > a:focus-visible {
+		outline: 2px solid var(--color-gold);
+		outline-offset: 2px;
 	}
 
 	#nav-wrap > a:hover .menu-icon {
@@ -1131,16 +1218,38 @@ ul#nav li.dropdown-current > a {
 
 	#nav-wrap .menu-icon:before {
 		bottom: 8px;
+		border-radius: 1px;
+		transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
 	}
 
 	#nav-wrap .menu-icon:after {
 		top: 8px;
+		border-radius: 1px;
+		transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
 	}
 
-	/* dropdown nav */
+	/* Hamburger -> X when menu is open */
+	#nav-wrap > a[aria-expanded="true"] .menu-icon {
+		background: transparent;
+	}
+
+	#nav-wrap > a[aria-expanded="true"] .menu-icon:before {
+		bottom: 0;
+		transform: rotate(45deg);
+	}
+
+	#nav-wrap > a[aria-expanded="true"] .menu-icon:after {
+		top: 0;
+		transform: rotate(-45deg);
+	}
+
+	/* dropdown nav (mobile panel) */
 	#nav-wrap ul#nav {
-		background: #1c212a;
-		padding: 54px 45px 60px 45px;
+		background: rgba(15, 18, 21, 0.96);
+		-webkit-backdrop-filter: blur(20px) saturate(180%);
+		backdrop-filter: blur(20px) saturate(180%);
+		border-top: 1px solid rgba(255, 255, 255, 0.08);
+		padding: 20px 28px 28px;
 		margin: 0;
 		height: auto;
 		display: none;
@@ -1150,6 +1259,11 @@ ul#nav li.dropdown-current > a {
 		position: absolute;
 		top: 66px;
 		right: 0;
+		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+	}
+
+	#nav-wrap ul#nav.is-open {
+		display: block;
 	}
 
 	#nav-wrap ul#nav > li {
@@ -1157,34 +1271,49 @@ ul#nav li.dropdown-current > a {
 		float: none;
 		height: auto;
 		text-align: left;
-		border-bottom: 1px dotted rgba(200, 200, 200, 0.1);
-		padding: 6px 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+		padding: 2px 0;
 	}
 
 	#nav-wrap ul#nav > li:first-child {
-		border-top: 1px dotted rgba(200, 200, 200, 0.1);
+		border-top: none;
+	}
+
+	#nav-wrap ul#nav > li:last-child {
+		border-bottom: none;
 	}
 
 	#nav-wrap ul#nav li a {
 		display: block;
 		width: auto;
-		padding: 0;
-		color: #cacbcb;
-		padding: 12px 0;
-		line-height: 16px;
+		padding: 14px 4px;
+		color: #d9d9d9;
+		line-height: 1.4;
 		border: none;
+		border-radius: 4px;
+		font-size: 15px;
 	}
 
-	#nav-wrap ul#nav li a:hover {
-		color: #FFFFFF;
+	#nav-wrap ul#nav li a:hover,
+	#nav-wrap ul#nav li a:focus-visible {
+		color: var(--color-gold);
+		background: rgba(253, 197, 1, 0.06);
 	}
 
-	#nav-wrap ul#nav li.current > a {
-		background: none;
-		color: #fdc501;
+	#nav-wrap ul#nav li a:focus-visible {
+		outline: 2px solid var(--color-gold);
+		outline-offset: -2px;
 	}
 
-	#nav-wrap ul#nav li.current > a:after {
+	#nav-wrap ul#nav li.current > a,
+	#nav-wrap ul#nav li > a[aria-current="page"],
+	#nav-wrap ul#nav li.dropdown-current > a {
+		background: rgba(253, 197, 1, 0.08);
+		color: var(--color-gold);
+	}
+
+	#nav-wrap ul#nav li.current > a:after,
+	#nav-wrap ul#nav li > a[aria-current="page"]:after {
 		display: none;
 	}
 
@@ -1213,18 +1342,45 @@ ul#nav li.dropdown-current > a {
 	}
 
 	.dropdown-content {
-		display: block;
+		display: none;
 		position: relative;
-		background-color: rgba(206, 206, 206, 0.1);
-		width: 100%;
+		top: auto;
+		left: auto;
+		background: rgba(255, 255, 255, 0.03);
+		-webkit-backdrop-filter: none;
+		backdrop-filter: none;
+		border: none;
+		border-radius: 6px;
 		box-shadow: none;
-		z-index: 1;
-		padding-left: 15px;
+		padding: 4px 8px 4px 18px;
+		margin: 4px 0 8px;
+		min-width: 0;
+		width: 100%;
+		z-index: auto;
+	}
+
+	.dropdown.is-open .dropdown-content,
+	.dropdown-current .dropdown-content,
+	.dropdown > a[aria-expanded="true"] + .dropdown-content {
+		display: block;
+	}
+
+	/* Disable hover-open on mobile (touch); rely on aria-expanded / .is-open */
+	.dropdown:hover .dropdown-content,
+	.dropdown:focus-within .dropdown-content {
+		display: none;
+	}
+
+	.dropdown.is-open:hover .dropdown-content,
+	.dropdown > a[aria-expanded="true"]:hover + .dropdown-content,
+	.dropdown.is-open .dropdown-content,
+	.dropdown > a[aria-expanded="true"] + .dropdown-content {
+		display: block;
 	}
 
 	.dropdown .nav-icon,
 	.dropdown-current .nav-icon {
-		transform: rotate(360deg);
+		transform: rotate(0deg);
 	}
 
 #nav-wrap ul#nav li.dropdown-current > a, li.dropdown-current a {
@@ -1239,9 +1395,9 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 
 /* make sure the menu is visible on larger screens
 --------------------------------------------------------------------- */
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:1025px) {
 	#nav-wrap ul#nav {
-		display: block !important;
+		display: inline-block !important;
 	}
 
 }
