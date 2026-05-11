@@ -2467,6 +2467,337 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 }
 
 /*
+/* 13d. =opportunities
+/* =================================================================== */
+
+/* Page intro */
+.opportunities-page .page-intro {
+	color: var(--color-text-bright);
+	max-width: 760px;
+	margin: 0 auto 60px;
+	text-align: center;
+	font-family: var(--font-body);
+	font-size: 16px;
+	line-height: 28px;
+}
+
+/* Section structure */
+.opportunity-section {
+	margin-bottom: 90px;
+}
+
+.opportunity-section:last-child {
+	margin-bottom: 0;
+}
+
+.opportunity-section__head {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 14px;
+	margin-bottom: 14px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid var(--color-gold-border);
+}
+
+.opportunity-section__head .year-card__heading {
+	margin: 0;
+	flex: 1 1 auto;
+}
+
+.section-number {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 44px;
+	height: 44px;
+	padding: 0 12px;
+	border-radius: var(--radius-sm);
+	background: var(--color-gold);
+	color: var(--color-bg);
+	font: 18px/1 var(--font-heading);
+	letter-spacing: 1px;
+}
+
+.section-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 7px 14px;
+	border-radius: 999px;
+	font: 11px/1 var(--font-heading);
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	white-space: nowrap;
+}
+
+.section-tag i {
+	font-size: 8px;
+}
+
+.section-tag--live {
+	background: rgba(253, 197, 1, 0.12);
+	border: 1px solid var(--color-gold);
+	color: var(--color-gold);
+}
+
+.section-tag--soon {
+	background: transparent;
+	border: 1px dashed var(--color-gold-border);
+	color: var(--color-text-light);
+}
+
+.section-tag--mixed {
+	background: transparent;
+	border: 1px solid var(--color-gold-border);
+	color: var(--color-gold);
+}
+
+.section-writeup {
+	color: var(--color-text-light);
+	margin: 0 0 30px;
+	max-width: 880px;
+	font-size: 15px;
+	line-height: 26px;
+}
+
+.section-writeup a,
+.section-writeup a:visited {
+	color: var(--color-gold);
+	text-decoration: underline;
+	text-decoration-color: var(--color-gold-border);
+	text-underline-offset: 3px;
+}
+
+.section-writeup a:hover,
+.section-writeup a:focus {
+	text-decoration-color: var(--color-gold);
+}
+
+/* Card grid */
+.opportunity-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 24px;
+}
+
+.opportunity-grid--featured {
+	grid-template-columns: 1fr;
+}
+
+/* Cards */
+.opportunity-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+	padding: 24px 24px 24px 32px;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.opportunity-card h3 {
+	margin-bottom: 12px;
+}
+
+.opportunity-card p {
+	color: var(--color-text-bright);
+	font-size: 15px;
+	line-height: 26px;
+	margin: 0 0 12px;
+}
+
+/* Featured (single column, more presence) */
+.opportunity-card--featured {
+	padding: 32px 36px;
+	border-left-width: 4px;
+}
+
+.opportunity-card--featured h3 {
+	font-size: 22px;
+	line-height: 32px;
+}
+
+.opp-card__lead {
+	color: var(--color-text-bright);
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 18px;
+}
+
+.opp-card__list {
+	list-style: none;
+	margin: 0 0 24px;
+	padding: 0;
+}
+
+.opp-card__list li {
+	position: relative;
+	padding: 6px 0 6px 28px;
+	color: var(--color-text-bright);
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.opp-card__list li i {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	color: var(--color-gold);
+	font-size: 12px;
+}
+
+.opp-card__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+	margin-top: auto;
+}
+
+.opp-card__hint {
+	color: var(--color-text-light);
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.opp-card__hint i {
+	color: var(--color-gold);
+}
+
+/* Live state */
+.opportunity-card.is-live {
+	border-left-color: var(--color-gold);
+}
+
+.opportunity-card.is-live:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Coming soon state */
+.opportunity-card.is-coming-soon {
+	border-left-style: dashed;
+	border-left-width: 2px;
+	border-left-color: var(--color-gold-border);
+	background: rgba(0, 0, 0, 0.12);
+}
+
+.opportunity-card.is-coming-soon h3 {
+	color: var(--color-text-bright);
+}
+
+.opportunity-card.is-coming-soon:hover {
+	border-left-color: var(--color-gold);
+	background: var(--color-bg-card);
+}
+
+/* Status pill (in-flow above heading) */
+.opp-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	align-self: flex-start;
+	padding: 5px 12px;
+	border-radius: 999px;
+	font: 10px/1 var(--font-heading);
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	margin-bottom: 16px;
+}
+
+.opp-status i {
+	font-size: 7px;
+}
+
+.opp-status--live {
+	background: var(--color-gold);
+	color: var(--color-bg);
+}
+
+.opp-status--soon {
+	background: transparent;
+	border: 1px dashed var(--color-gold-border);
+	color: var(--color-text-light);
+}
+
+.opp-status--soon i {
+	color: var(--color-gold);
+}
+
+/* Outline secondary CTA */
+.btn-outline-gold {
+	display: inline-block;
+	padding: 11px 27px;
+	background: transparent;
+	color: var(--color-gold);
+	font: 14px/24px var(--font-heading);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	border: 1px solid var(--color-gold);
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-gold:hover,
+.btn-outline-gold:focus {
+	background: var(--color-gold);
+	color: var(--color-bg);
+}
+
+/* Lock button text colors across :visited (the global a:visited rule paints them white otherwise) */
+.btn-gold,
+.btn-gold:link,
+.btn-gold:visited,
+.btn-gold:active {
+	color: #000;
+}
+
+.btn-outline-gold,
+.btn-outline-gold:link,
+.btn-outline-gold:visited {
+	color: var(--color-gold);
+}
+
+.btn-outline-gold:hover,
+.btn-outline-gold:focus {
+	color: var(--color-bg);
+}
+
+.opportunity-card .btn-gold,
+.opportunity-card .btn-outline-gold {
+	align-self: flex-start;
+}
+
+@media only screen and (max-width: 640px) {
+	.opportunity-section__head {
+		gap: 10px;
+	}
+
+	.section-tag {
+		flex-basis: 100%;
+	}
+
+	.opportunity-card--featured {
+		padding: 24px;
+	}
+
+	.opportunity-card--featured h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.opp-card__actions {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+/*
 /* 13c. =donate/store
 /* =================================================================== */
 
