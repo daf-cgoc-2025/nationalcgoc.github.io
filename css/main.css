@@ -920,7 +920,7 @@ header .header-social li a:hover {
 
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1080px) {
 	/* On tablet/mobile, slightly more opaque for legibility over varied hero content */
 	header {
 		background: rgba(15, 18, 21, 0.88);
@@ -1056,10 +1056,10 @@ header .logo a:focus-visible {
 	top: 7px;
 }
 
-/* Tighten desktop nav padding between 1024-1280 so 9 items fit comfortably
-   without dropping font-size to unreadable vw values. Below 1024 we switch
+/* Tighten desktop nav padding between 1081-1280 so 9 items fit comfortably
+   without dropping font-size to unreadable vw values. Below 1081 we switch
    to the mobile hamburger so cramped intermediate widths are avoided. */
-@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+@media only screen and (max-width: 1280px) and (min-width: 1081px) {
 	ul#nav li a {
 		padding: 14px 8px;
 		font-size: 12px;
@@ -1142,7 +1142,7 @@ ul#nav li.dropdown-current > a {
 
 /* mobile navigation
 --------------------------------------------------------------------- */
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1080px) {
 	#nav-wrap {
 		z-index: 1001;
 		display: block;
@@ -1395,7 +1395,7 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 
 /* make sure the menu is visible on larger screens
 --------------------------------------------------------------------- */
-@media only screen and (min-width:1025px) {
+@media only screen and (min-width:1081px) {
 	#nav-wrap ul#nav {
 		display: inline-block !important;
 	}
@@ -2748,6 +2748,7 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 	flex-direction: column;
 	margin-bottom: 0;
 	padding: 24px 24px 24px 32px;
+	border-left: 2px solid var(--color-gold-border);
 	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
