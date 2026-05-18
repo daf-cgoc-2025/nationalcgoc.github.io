@@ -2627,7 +2627,7 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 /* =================================================================== */
 
 /* Page intro */
-.opportunities-page .page-intro {
+.page-intro {
 	color: var(--color-text-bright);
 	max-width: 760px;
 	margin: 0 auto 60px;
