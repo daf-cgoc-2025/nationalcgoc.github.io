@@ -28,84 +28,218 @@
   });
 
   /* ---------------------------------------------------- */
-  /* Adjust Primary Navigation Background Opacity
+  /* Header opacity toggle on scroll (RAF-throttled)
   /* ---------------------------------------------------- */
-  window.addEventListener("scroll", function () {
+  (function () {
     const header = document.getElementById("main-header");
     if (!header) return;
-    const h = header.offsetHeight;
-    const y = window.scrollY;
+    let ticking = false;
 
-    if (y > h + 30) {
-      header.classList.add("opaque");
-    } else {
-      header.classList.remove("opaque");
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        const threshold = header.offsetHeight + 30;
+        if (window.scrollY > threshold) {
+          header.classList.add("opaque");
+        } else {
+          header.classList.remove("opaque");
+        }
+        ticking = false;
+      });
     }
-  });
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  })();
 
   /* ---------------------------------------------------- */
-  /* Mobile Menu
+  /* Primary navigation: ARIA, dropdown, mobile menu
   /* ---------------------------------------------------- */
   const navWrap = document.querySelector("nav#nav-wrap");
   const nav = document.querySelector("ul#nav");
 
   if (navWrap && nav) {
-    // Remove the static mobile-btn links
-    navWrap.querySelectorAll("a.mobile-btn").forEach(function (btn) {
-      btn.remove();
-    });
+    // Landmark label for screen readers
+    if (!navWrap.hasAttribute("aria-label")) {
+      navWrap.setAttribute("aria-label", "Primary");
+    }
+    // Mark current page on the link whose href matches location (best-effort).
+    // Falls back gracefully if no match — existing .current class still styles it.
+    (function markCurrent() {
+      const here = location.pathname.replace(/\/index\.html$/, "/");
+      nav.querySelectorAll("a[href]").forEach(function (a) {
+        const href = a.getAttribute("href");
+        if (!href || href === "#") return;
+        try {
+          const url = new URL(a.href, location.href);
+          const target = url.pathname.replace(/\/index\.html$/, "/");
+          if (target === here) a.setAttribute("aria-current", "page");
+        } catch (_) { /* ignore */ }
+      });
+      // Mirror .current class to aria-current for legacy markup
+      nav.querySelectorAll("li.current > a, li.dropdown-current > a").forEach(function (a) {
+        if (!a.hasAttribute("aria-current")) a.setAttribute("aria-current", "page");
+      });
+    })();
 
-    // Create toggle button
+    /* --- Replace static mobile-btn anchors with one accessible toggle --- */
+    navWrap.querySelectorAll("a.mobile-btn").forEach(function (btn) { btn.remove(); });
+
     const toggleBtn = document.createElement("a");
     toggleBtn.id = "toggle-btn";
     toggleBtn.href = "#";
-    toggleBtn.title = "Menu";
-    toggleBtn.innerHTML = '<span class="menu-icon">Menu</span>';
+    toggleBtn.setAttribute("role", "button");
+    toggleBtn.setAttribute("aria-label", "Toggle navigation menu");
+    toggleBtn.setAttribute("aria-expanded", "false");
+    toggleBtn.setAttribute("aria-controls", "nav");
+    toggleBtn.innerHTML = '<span class="menu-icon" aria-hidden="true">Menu</span>';
     navWrap.prepend(toggleBtn);
 
-    // Toggle nav visibility
-    toggleBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      if (nav.style.display === "block") {
-        nav.style.display = "none";
-      } else {
-        nav.style.display = "block";
+    // Activate via Space as well as Enter (anchor with role=button)
+    toggleBtn.addEventListener("keydown", function (e) {
+      if (e.key === " " || e.key === "Spacebar") {
+        e.preventDefault();
+        toggleBtn.click();
+      } else if (e.key === "Escape" && nav.classList.contains("is-open")) {
+        e.preventDefault();
+        setMobileMenu(false);
+        toggleBtn.focus();
       }
     });
 
-    // Handle mobile class
-    function checkMobile() {
-      if (window.getComputedStyle(toggleBtn).display !== "none") {
+    function isMobile() {
+      return window.getComputedStyle(toggleBtn).display !== "none";
+    }
+
+    function setMobileMenu(open) {
+      if (open) {
+        nav.classList.add("is-open");
+        toggleBtn.setAttribute("aria-expanded", "true");
+      } else {
+        nav.classList.remove("is-open");
+        toggleBtn.setAttribute("aria-expanded", "false");
+        // Also collapse any open submenus
+        nav.querySelectorAll(".dropdown.is-open, .dropdown > a[aria-expanded='true']").forEach(function (el) {
+          el.classList.remove("is-open");
+          if (el.tagName === "A") el.setAttribute("aria-expanded", "false");
+        });
+        nav.querySelectorAll(".dropdown > a[aria-expanded='true']").forEach(function (a) {
+          a.setAttribute("aria-expanded", "false");
+        });
+      }
+    }
+
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      setMobileMenu(!nav.classList.contains("is-open"));
+    });
+
+    function syncForViewport() {
+      if (isMobile()) {
         nav.classList.add("mobile");
       } else {
         nav.classList.remove("mobile");
-        nav.style.display = "";
+        setMobileMenu(false);
       }
     }
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
+    syncForViewport();
+    window.addEventListener("resize", syncForViewport);
 
-    // Handle nav link clicks
+    /* --- Dropdown (Partners) accessibility --- */
+    nav.querySelectorAll("li.dropdown, li.dropdown-current").forEach(function (li) {
+      const trigger = li.querySelector("a.top-level");
+      const panel = li.querySelector(".dropdown-content");
+      if (!trigger || !panel) return;
+
+      // Give the panel an id for aria-controls
+      if (!panel.id) panel.id = "submenu-" + Math.random().toString(36).slice(2, 8);
+
+      trigger.setAttribute("role", "button");
+      trigger.setAttribute("aria-haspopup", "true");
+      trigger.setAttribute("aria-expanded", "false");
+      trigger.setAttribute("aria-controls", panel.id);
+
+      function open() {
+        trigger.setAttribute("aria-expanded", "true");
+        li.classList.add("is-open");
+      }
+      function close() {
+        trigger.setAttribute("aria-expanded", "false");
+        li.classList.remove("is-open");
+      }
+      function toggle() {
+        if (trigger.getAttribute("aria-expanded") === "true") close();
+        else open();
+      }
+
+      // Click toggles (covers both touch and mouse). Prevent default since href="#".
+      trigger.addEventListener("click", function (e) {
+        e.preventDefault();
+        toggle();
+      });
+
+      // Keyboard: Enter/Space toggles; ArrowDown opens and moves to first item;
+      // Escape closes and returns focus to trigger.
+      trigger.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+          e.preventDefault();
+          toggle();
+          if (trigger.getAttribute("aria-expanded") === "true") {
+            const first = panel.querySelector("a");
+            if (first) first.focus();
+          }
+        } else if (e.key === "ArrowDown") {
+          e.preventDefault();
+          open();
+          const first = panel.querySelector("a");
+          if (first) first.focus();
+        } else if (e.key === "Escape") {
+          close();
+        }
+      });
+
+      // Inside the panel: Esc returns to trigger; ArrowDown/Up move between items
+      panel.addEventListener("keydown", function (e) {
+        const items = Array.from(panel.querySelectorAll("a"));
+        const idx = items.indexOf(document.activeElement);
+        if (e.key === "Escape") {
+          e.preventDefault();
+          close();
+          trigger.focus();
+        } else if (e.key === "ArrowDown") {
+          e.preventDefault();
+          const next = items[(idx + 1) % items.length];
+          if (next) next.focus();
+        } else if (e.key === "ArrowUp") {
+          e.preventDefault();
+          const prev = items[(idx - 1 + items.length) % items.length];
+          if (prev) prev.focus();
+        } else if (e.key === "Tab") {
+          // Closing on Tab-out of the submenu lets focus continue naturally
+          setTimeout(function () {
+            if (!li.contains(document.activeElement)) close();
+          }, 0);
+        }
+      });
+
+      // Click outside closes
+      document.addEventListener("click", function (e) {
+        if (!li.contains(e.target)) close();
+      });
+    });
+
+    /* --- Nav link click handling on mobile: close menu after navigation --- */
     nav.addEventListener("click", function (e) {
       const link = e.target.closest("a");
       if (!link) return;
 
+      // Don't close on dropdown trigger (handled above)
+      if (link.classList.contains("top-level")) return;
+
       if (nav.classList.contains("mobile")) {
-        const parent = link.parentElement;
-        if (
-          (parent.classList.contains("dropdown") || parent.classList.contains("dropdown-current")) &&
-          link.classList.contains("top-level")
-        ) {
-          e.preventDefault();
-          parent.classList.toggle("open");
-          const dropdownContent = parent.querySelector(".dropdown-content");
-          if (dropdownContent) {
-            dropdownContent.style.display =
-              dropdownContent.style.display === "block" ? "none" : "block";
-          }
-          return;
-        }
-        nav.style.display = "none";
+        // Allow navigation to proceed, then close the panel
+        setMobileMenu(false);
       }
     });
   }
