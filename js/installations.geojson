@@ -795,10 +795,10 @@
         "location": "Dayton, OH",
         "lat": "39.8",
         "lon": "-84.1",
-        "president": "Julia Graham",
-        "vp": "Sydney Taggart",
-        "primary_email": "julia.graham.2@us.af.mil",
-        "secondary_email": "sydney.d.taggart.mil@health.mil",
+        "president": "Jasmine Adams",
+        "vp": "Tingting Han",
+        "primary_email": "jasmine.adams.2@us.af.mil",
+        "secondary_email": "tingting.han@us.af.mil",
         "org_email": "None"
       },
       "geometry": {
@@ -1753,12 +1753,12 @@
         "type": "Point",
         "coordinates": [0.5, 52.3]
       }
-    }, 
+    },
     {
       "type": "Feature",
       "properties": {
         "region": "Eastern Region",
-        "division": "Central Division", 
+        "division": "Central Division",
         "base": "Pentagon",
         "location": "Virginia",
         "lat": "38.87",
@@ -1773,14 +1773,14 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-77.01, 38.87]  
+        "coordinates": [-77.01, 38.87]
       }
-    }, 
+    },
     {
       "type": "Feature",
       "properties": {
         "region": "Western Region",
-        "division": "Midwest Division", 
+        "division": "Midwest Division",
         "base": "United States Air Force Academy ROCKY MOUNTAIN CGOC",
         "location": "Colorado",
         "lat": "38.5",
@@ -1797,8 +1797,8 @@
         "type": "Point",
         "coordinates": [-104.5, 38.5]
       }
-     },
-     {
+    },
+    {
       "type": "Feature",
       "properties": {
         "region": "Eastern Region",
@@ -1887,7 +1887,7 @@
         "coordinates": [-68.6, 76.5]
       }
     },
-     {
+    {
       "type": "Feature",
       "properties": {
         "region": "Western Region",
@@ -1910,5 +1910,5 @@
         "coordinates": [-122.5, 45.5]
       }
     }
-  ]  
+  ]
 }
