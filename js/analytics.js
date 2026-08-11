@@ -92,16 +92,15 @@
                        /(^|\.)dafcgoc\.org$/.test(host);
         params.link_type = internal ? "internal" : "outbound";
 
-        /* file downloads get GA4's standard event too */
+        /* Downloads are labelled here for our own click report, but we do NOT
+           send a file_download event: GA4 Enhanced Measurement already fires
+           one automatically (with file_name / file_extension / link_url), and
+           sending our own would double-count every download. */
         var m = href.match(/\.(pdf|docx?|xlsx?|pptx?|csv|zip|txt)(\?|$)/i);
         if (m) {
           params.link_type = "download";
-          track("file_download", {
-            file_name: clean(href.split("/").pop().split("?")[0], 100),
-            file_extension: m[1].toLowerCase(),
-            link_text: params.element_text,
-            page_path: location.pathname
-          });
+          params.file_name = clean(href.split("/").pop().split("?")[0], 100);
+          params.file_extension = m[1].toLowerCase();
         }
 
         /* partner referrals, reported back to the partner at renewal.
