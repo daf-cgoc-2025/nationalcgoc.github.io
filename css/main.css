@@ -2803,6 +2803,92 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 	font-size: 12px;
 }
 
+/* Term and commitment chips */
+.opp-card__meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+.opp-card__meta li {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 13px;
+	border: 1px solid var(--color-gold-border);
+	border-radius: 999px;
+	color: var(--color-text-bright);
+	font-family: var(--font-body);
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.opp-card__meta li i {
+	color: var(--color-gold);
+	font-size: 11px;
+}
+
+/* Collapsed role detail */
+.opp-card__details {
+	margin: 0 0 22px;
+	border-top: 1px solid var(--color-gold-border);
+	padding-top: 16px;
+}
+
+.opp-card__details summary {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 6px 0;
+	cursor: pointer;
+	list-style: none;
+	color: var(--color-gold);
+	font: 12px/1 var(--font-heading);
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.opp-card__details summary::-webkit-details-marker {
+	display: none;
+}
+
+.opp-card__details summary::before {
+	content: "";
+	width: 7px;
+	height: 7px;
+	border-right: 2px solid var(--color-gold);
+	border-bottom: 2px solid var(--color-gold);
+	transform: rotate(-45deg);
+	margin-top: -3px;
+}
+
+.opp-card__details[open] summary::before {
+	transform: rotate(45deg);
+	margin-top: -6px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.opp-card__details summary::before {
+		transition: transform 0.2s ease, margin-top 0.2s ease;
+	}
+}
+
+.opp-card__details summary:focus-visible {
+	outline: 2px solid var(--color-gold);
+	outline-offset: 3px;
+}
+
+.opp-card__details .opp-card__lead {
+	margin-top: 16px;
+}
+
+.opp-card__details .opp-card__list {
+	margin-bottom: 4px;
+}
+
 .opp-card__actions {
 	display: flex;
 	flex-wrap: wrap;
@@ -2946,6 +3032,10 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 	.opportunity-card--featured h3 {
 		font-size: 20px;
 		line-height: 30px;
+	}
+
+	.opp-card__meta li {
+		font-size: 12px;
 	}
 
 	.opp-card__actions {
