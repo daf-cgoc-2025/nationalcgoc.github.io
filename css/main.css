@@ -2803,6 +2803,34 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 	font-size: 12px;
 }
 
+/* Term and commitment chips */
+.opp-card__meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+.opp-card__meta li {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 13px;
+	border: 1px solid var(--color-gold-border);
+	border-radius: 999px;
+	color: var(--color-text-bright);
+	font-family: var(--font-body);
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.opp-card__meta li i {
+	color: var(--color-gold);
+	font-size: 11px;
+}
+
 /* Collapsed role detail */
 .opp-card__details {
 	margin: 0 0 22px;
@@ -3004,6 +3032,10 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 	.opportunity-card--featured h3 {
 		font-size: 20px;
 		line-height: 30px;
+	}
+
+	.opp-card__meta li {
+		font-size: 12px;
 	}
 
 	.opp-card__actions {
