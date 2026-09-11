@@ -2734,6 +2734,7 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 .opportunity-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	align-items: start;
 	gap: 24px;
 }
 
@@ -2829,6 +2830,21 @@ ul#nav li.dropdown a.top-level, ul#nav li.dropdown-current a.top-level {
 .opp-card__meta li i {
 	color: var(--color-gold);
 	font-size: 11px;
+}
+
+/* Event flyer */
+.opp-card__flyer {
+	display: block;
+	margin: 0 0 20px;
+	border: 1px solid var(--color-gold-border);
+	border-radius: var(--radius-sm);
+	overflow: hidden;
+}
+
+.opp-card__flyer img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 /* Collapsed role detail */
