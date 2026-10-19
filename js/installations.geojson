@@ -631,6 +631,26 @@
       "properties": {
         "region": "Western Region",
         "division": "Pacific Division",
+        "base": "Fresno Air National Guard Base",
+        "location": "Fresno, CA",
+        "lat": "36.7",
+        "lon": "-119.7",
+        "president": "Kodie Egenolf",
+        "vp": "Miguel Saldana Rodriguez",
+        "primary_email": "kodie.egenolf@us.af.mil",
+        "secondary_email": "miguel.saldana_rodriguez@us.af.mil",
+        "org_email": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.7, 36.7]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region": "Western Region",
+        "division": "Pacific Division",
         "base": "Joint Base Lewis-McChord AFB",
         "location": "Tacoma, WA",
         "lat": "47.1",
